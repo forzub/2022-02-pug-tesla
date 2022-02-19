@@ -1,0 +1,21 @@
+mixin form_request_a_call()
+    .form__back.form-request
+        form.form-pop#form-request(action='#')
+            .form-pop__close 
+                span.icon.icon-modal_close
+            h2.form-pop__title Заказать звонок
+            h2.form-pop__sub-title Заполните необходимые данные, и наш менеджер свяжется с вами для осуществления покупки
+            .form-pop__content 
+                
+                .form-pop__item 
+                    label.form-pop__label(for='form-req__input-name') Как к Вам обращаться?*
+                    input.form-pop__input#form-req__input-name(type='text' placeholder='имя')
+                
+                .form-pop__item 
+                    label.form-pop__label(for='form-req__input-name') Телефон*
+                    input.form-pop__input#form-req__input-phone(type='text' placeholder='имя')
+                
+                .form-pop__item 
+                    button.form-pop__button(type='submit') заказать звонок
+                    
+                    

@@ -1,0 +1,42 @@
+header.header
+    .top-line#top_menu
+        .container
+            .row
+                .top-line__col.top-line__logo
+                    a.top-logo(href="/")
+                        span.icon.icon-Logo_tesla
+                
+                .top-line__col.top__location 
+                    .top__choose-location
+                        .top__location-btn санкт-петербург
+                .top-line__col.top-line__space
+                nav.top-line__col.top-menu 
+                    ul.top-menu__list 
+                        li.mob-only(onclick='mob_menu_close("top_menu")')
+                            span.icon.icon-modal_close
+                        each itm in [{title : 'АВТОМОБИЛИ', href: '/cars.html'}, {title : 'АКСЕССАУРЫ', href: '/accessories.html'},{title : 'ЗАРЯДНЫЕ УСТРОЙСТВА', href: '/charging.html'},{title : 'СЕРВИС', href: '/service.html'},{title :'КОНТАКТЫ', href: '/сontacts.html'}]
+                            li.top-menu__itm
+                                a.top-menu__link(href=`${itm.href}`) #{itm.title}
+                
+                .top-line__col.top__phone 
+                    a.top-phone__link(href='tel:88005501836') 8 (800) 550-18-36
+
+                .top-line__col.top__requestcall 
+                    button.top__requestcall-btn(type='text') заказать звонок
+                .top-line__col.top-mobile__buttons
+                    .top-menu__btn.top-mob__menu( onclick='mob_menu_onclick()' )
+                        span.top-mob__menu-tx.icon.icon-menu
+                    .top-menu__btn.top-mob__cat( onclick='mob_cat_onclick()' )
+                        span.top-mob__cat-tx.icon.icon-Logo
+                
+    .top-catalog#top_cat
+        .container
+            .row
+                nav.top-catalog__nav 
+                    ul.top-catalog__list
+                        li.mob-only
+                            span.icon.icon-modal_close(onclick='mob_menu_close("top_cat")')
+                        each itm in ['Model S','Model 3','Model X','Model Y','CYBERTRUCK']
+                            li.top-catalog__itm
+                                a.top-catalog__link(href='#') #{itm}
+

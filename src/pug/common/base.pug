@@ -1,0 +1,35 @@
+block vars 
+    - var siteTitle = 'title of site';
+    - var lang1 = 'ru';
+
+- time = Date.now();
+- console.log(time)
+
+include ../mixin/pop-form_confirmation
+include ../mixin/pop-form_request_a_call
+
+doctype html
+html(lang=lang1)
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href=`css/style.min.css?v=${time}`)
+
+
+        title #{siteTitle}
+    body
+        .wrapper
+            include ./header
+            main.main
+                block content
+                //- block foot
+            include ./footer
+            +form_request_a_call
+            +form_confirmation
+            block scripts
+                //- script(src="js/swiper-bundle.min.js")
+                //- script(src="js/simplebar.min.js")
+                script(src="js/app.js")
+
+                

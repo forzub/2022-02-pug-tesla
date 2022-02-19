@@ -1,0 +1,48 @@
+footer.footer
+    
+    form.footer-form#fotter_form(action='#')
+        .content-container
+            h2.footer-form__title Задайте нам вопрос
+            .footer-form__content 
+                .fu-left
+                    .fu-form_item
+                        label.fu-form__label(for='fuFormName') Как к Вам обращаться?*
+                        input.fu-form__input#fuFormName(name='name'  placeholder='имя')
+                    .fu-form_item
+                        label.fu-form__label(for='fuFormEmail') Email*
+                        input.fu-form__input#fuFormEmail(name='email' placeholder='e-mail')
+                    .fu-form_item
+                        label.fu-form__label(for='fuFormPhone') Телефон*
+                        input.fu-form__input#fuFormPhone(name='phone' placeholder='телефон')
+                .fu-right
+                    .fu-form_item
+                        label.fu-form__label(for='fuFormMessage') Ваш вопрос
+                        textarea.fu-form__textarea#fuFormMessage(name="Message" placeholder='Сообщение' ) Здравствуйте! На днях я заходил к вам в салон и присмотрел автомобиль. Я готов его купить, но есть один нюанс. Это будет подарок. Возможно ли осуществить доставку автомобиля в другой город? Если можно, то хотелось бы заказать доставку на определенный день, место и время. Пожалуйста, свяжитесь со мной. Спасибо!
+                    .fu-form_item.fu-form__info-bx
+                        .fu-form__info Нажимая на кнопку, вы соглашаетесь на обработку ваших персональных данных в соответствии с <a href='#'>политикой конфиденциальности</a>
+                        button.fu-form__button(type='submit') отправить
+                    
+
+    .footer-info 
+        .content-container
+            .row
+                .footer-info__col.footer-info__phone 
+                    a.footer-info__link(href='tel:88005501836') 8 (800) 550-18-36
+                .footer-info__col.footer-info__up(onclick='footer_up_click()')
+                    span.icon.icon-footer_up
+                .footer-info__col.footer-info__email 
+                    a.footer-info__link(href='mailto:info@unicommotors.com') info@unicommotors.com
+    .footer-line 
+        .content-container
+            .row 
+                .footer-line__col.footer__copyright UNICOM MOTORS (C) 2021
+                .footer-line__col.footer__menu
+                    ul.footer-menu__list 
+                        each itm in [{title : 'АВТОМОБИЛИ', href: '/cars.html'}, {title : 'АКСЕССАУРЫ', href: '/accessories.html'},{title : 'ЗАРЯДНЫЕ УСТРОЙСТВА', href: '/charging.html'},{title : 'СЕРВИС', href: '/service.html'},{title :'КОНТАКТЫ', href: '/сontacts.html'}]
+                            li.footer-menu__itm
+                                a.footer-menu__link(href=`${itm.href}`) #{itm.title}
+                .footer-line__col.footer__confident
+                    a.footer__confident-link(href='#') политика конфиденциальности
+
+
+    
