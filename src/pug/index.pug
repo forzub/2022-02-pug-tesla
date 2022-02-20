@@ -1,13 +1,149 @@
 extends ./common/base
 
-include ./mixin/card
-include ./mixin/cardSlider
-//- include ./mixin/tab
+include ./mixin/card-cars
+include ./mixin/card-team
+//- include ./mixin/cardSlider
+//- include ./mixin/tab 
 
 block vars 
     - let siteTitle = 'Единственный салон TESLA в Санкт-Петербурге'
 
 block content
+    section.section.index-banner
+        .container
+            .baner-content-bx
+                .baner-content
+                    .banner-slider-background 
+                        .banner-slider.swiper-wrapper 
+                            .swiper-slide
+                                .banner-slider__image 
+                                    img.page-banner__img(src='@img/index-banner-1.jpg')
+                            .swiper-slide
+                                .banner-slider__image 
+                                    img.page-banner__img(src='@img/index-banner-2.jpg')
+                            .swiper-slide
+                                .banner-slider__image 
+                                    img.page-banner__img(src='@img/index-banner-3.jpg')
+                
+                .banner-slider-textlayer 
+                    .banner-slider__text-cont       
+                        h1.index-banner__title.index-banner__title Единственный салон в Санкт-Петербурге
+                        .index-banner__buttons.row 
+                            button.index-banner__button.btn.btn-white каталог
+                            button.index-banner__button.btn.btn-transparent задать вопрос
+                .index-banner__social.row 
+                    span.banner-social__title подпишись на нас
+                    a.banner-social__link(href='#') instagram
+                    a.banner-social__link(href='#') facebook
 
+    section.section.catalog-sect
+        .container
+            .catalog-sect__row.row 
+                +card_cars({ title: 'Model S', price: '8 650 000 ₽', speed: '250', vel:'3.2', instock : true , img : 'model-s.jpg' , link: '#'} )
+                +card_cars({ title: 'Model 3', price: '5 960 000 ₽', speed: '177', vel:'3.3', instock : false , img : 'model-3.jpg' , link: '#'} )
+                +card_cars({ title: 'Model X', price: '9 200 000 ₽', speed: '250', vel:'3.9', instock : false , img : 'model-x.jpg' , link: '#'} )
+                +card_cars({ title: 'Model Y', price: '6 410 000 ₽', speed: '250', vel:'3.7', instock : false , img : 'model-y.jpg' , link: '#'} )
+            .row.catalog-sect__btn-bx 
+                a.btn.btn-black.catalog-sect__btn(href='/catalog') перейти в каталог
     
+
+
+    section.section.why-tesla
+        .content-container 
+            .row.why-tesla__row 
+                .col.why-tesla__col
+                    h2.sectiont-content__title.why-tesla__titul Почему именно Tesla?
+                .col.why-tesla__col
+                    .why-tesla__text Дизайн автомобилей создавался с нуля, в отличии от ДВС-машин, которые идут поколениями из года в год. TESLA - это это минимализм, новаторство, стиль и технологии. Это качество и гарантия 8 лет. Непревзойденный синтез динамики и плавности.
+                .col.why-tesla__img-bx 
+                    img.why-tesla__img(src='@img/sect-why-1.jpg')
     
+
+
+    section.section.why-we
+        .content-container
+            .row.why-we__row 
+                .col.why-we__col
+                    .why-we__background-img 
+                        img.why-me__img(src='@img/sect-why-2.png')
+                    h2.sectiont-content__title.why-we__title Почему именно у нас?
+                
+                .col.why-we__col.info-type2
+
+                    .info-type2__item.theme-black
+                        .info-type2__num.theme-black 01
+                        .info-type2__content
+                            .info-type2__title Уникальность
+                            .info-type2__text Мы единственные в Санкт-Петербурге занимаемся продажей и обслуживанием автомобилей TESLA
+                    
+                    .info-type2__item.theme-black
+                        .info-type2__num.theme-black 02
+                        .info-type2__content
+                            .info-type2__title Передовые разработки
+                            .info-type2__text Свои технические и дизайнерские решения по зарядным станциям
+                    
+                    .info-type2__item.theme-black
+                        .info-type2__num.theme-black 03
+                        .info-type2__content
+                            .info-type2__title Варианты покупки
+                            .info-type2__text Корпоративные продажи, Trade-in, лизинг и кредит
+                    
+                    .info-type2__item.theme-black
+                        .info-type2__num.theme-black 04
+                        .info-type2__content
+                            .info-type2__title Гарантии
+                            .info-type2__text Сопровождение и поддержка автомобилей клиентов по гарантии на ремонт в Европу
+                    
+                    .info-type2__item.theme-black
+                        .info-type2__num.theme-black 05
+                        .info-type2__content
+                            .info-type2__title Сервис
+                            .info-type2__text У нас своя система обеспечения клиента и удаленная сервисная поддержка
+                    
+                    .info-type2__item.theme-black
+                        .info-type2__num.theme-black 06
+                        .info-type2__content
+                            .info-type2__title Опыт
+                            .info-type2__text Наша компания существует более 7-ми лет, весь опыт и знания позволяют нам в скором времени стать лидерами рынка. Обращаясь к нам, Вы получаете прекрасный уровень сервиса, а главное Вы обретаете надёжного партнера, готового всегда поддержать и помочь по всем вопросам процесса эксплуатации автомобиля. Unicom Motors это Ваш товарищ в автомобильном мире
+                    
+    section.section.our-team
+        .content-container
+            h2.sectiont-content__title Наша команда
+            .row.our-team__row.our-team__row
+                .our-team__col
+                    +card_team({name : 'Трофимов Алексей Алексеевич', position : 'Директор инновационных технологий' , img : '/sect-why-p1.jpg'})
+                .our-team__col
+                    +card_team({name : 'Усиков Илья Николаевич', position : 'Менеджер по продажам' , img : '/sect-why-p2.jpg'})
+                
+
+    section.section.saloon
+        .container 
+            .saloon-slader
+                .row 
+                    h2.sectiont-content__title Внутри нашего салона
+                    .saloon-slider__navigation 
+                        span.icon.icon-salon_arrow.saloon-slider__prev
+                        span.icon.icon-salon_arrow_active.saloon-slider__next
+                .saloon-slider__content
+
+    section.section.contacts 
+        .content-container 
+            h2.sectiont-content__title Контакты
+            .row.contacts__row 
+                .contact__col.contact__card
+                    .contact-content__position россия
+                    a.contact-content__phone(href='tel:88005501836') 8 (800) 550-18-36
+                    .paragraph_separator 
+                    .contact-content__adress г. Санкт-Петербург, Суздальское шоссе, 65
+                    a.contact-content__email(href='mailto:info@unicommotors.com') info@unicommotors.com
+                    a.contact-content__url(href='unicommotors.com' target='_blank') unicommotors.com
+                    .contact-content__map <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.163175616236!2d30.27694321610201!3d60.0620967819212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963517e1e6a3a5%3A0xfb3d86a18c54aedc!2z0KHRg9C30LTQsNC70YzRgdC60L7QtSDRiC4sIDY1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTQzNTY!5e0!3m2!1sru!2sua!4v1645359231381!5m2!1sru!2sua" loading="lazy"></iframe>
+
+                .contact__col.contact__card
+                    .contact-content__position Украина
+                    a.contact-content__phone(href='tel:380662729282') +380-66-272-92-82
+                    .paragraph_separator 
+                    .contact-content__adress г. Киев, ул. Изюмская, 1
+                    a.contact-content__email(href='mailto:get.unicum@gmail.com') get.unicum@gmail.com
+                    a.contact-content__url(href='unicommotors.com' target='_blank') unicommotors.com
+                    .contact-content__map <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.515947207425!2d30.513913216013158!3d50.412858079470176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3b1e1f93c5%3A0x56ee879cd1264c20!2z0YPQuy4g0JjQt9GO0LzRgdC60LDRjywgMSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1645359269273!5m2!1sru!2sua" loading="lazy"></iframe>

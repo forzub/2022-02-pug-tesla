@@ -26,3 +26,11 @@ function footer_up_click(){
 }
 
 // import * as flsFunctions from './modules/functions.js';
+
+let index_banner_swiper = null;
+if (document.querySelector('.banner-slider-background')) {index_banner_swiper = new Swiper('.banner-slider-background',{
+    loop : true,
+    autoplay:{
+        delay:5000
+    }
+});}

@@ -1,13 +1,84 @@
 extends ./common/base
 
-include ./mixin/card
-include ./mixin/cardSlider
+include ./mixin/template-breadcrumbs
+//- include ./mixin/card
 //- include ./mixin/tab
 
 block vars 
     - let siteTitle = 'Сервис';
 
-block content
+block content  
+    section.section.servise-line1 
+        .content-container
+            +breadcrumbs([{title : 'сервис', href : '/servise'}])
+            .section__content
+                h1.sectiont__title #{siteTitle}
+                .row    
+                    .section-content__col.serv-col1__left Собственный специализированный сервис по обслуживанию электромобилей Tesla располагается на территории автосалона Unicum Motors
+                    .section-content__col.serv-col1__right
+                        .info-type1__item <span class="icon icon-serv-techservise"></span> Техническое сопровождение, ремонт и обслуживание электромобилей Tesla
+                        .info-type1__item <span class="icon icon-serv-repairpath"></span> Заказ любых запчастей и аксессуаров из Европы
+                        .info-type1__item <span class="icon icon-serv-batdiagnostic"></span> Бесплатная диагостика замена аккумулятора в течение года
+    
+    section.page-banner.page-banner__fullsize 
+        .page-banner__itm
+            img.page-banner__img(src='@img/servis-banner.jpg')     
+
+    section.section.servise-line2
+        .content-container
+            .section-content__col.serv-col2__left
+                h2.sectiont-content__title В нашем сервисном центре мы предлагаем
+            
+            .section-content__col.serv-col2__right
+                .info-type2__item
+                    .info-type2__num 01
+                    .info-type2__content
+                        .info-type2__title Техническое обслуживание
+                        .info-type2__text Ремонт и техобслуживание в нашем сервисном центре
+
+                .info-type2__item
+                    .info-type2__num 02
+                    .info-type2__content
+                        .info-type2__title Выездная диагностика
+                        .info-type2__text Устранение неисправностей в пределах СПБ и Лен. области 
+
+                .info-type2__item
+                    .info-type2__num 03 
+                    .info-type2__content
+                        .info-type2__title Бесплатная установка
+                        .info-type2__text SIM-карты в ваш автомобиль
+
+                .info-type2__item
+                    .info-type2__num 04
+                    .info-type2__content
+                        .info-type2__title Установка Wall Connector
+                        .info-type2__text У вас дома или на работе нашими специалистами
+
+                .info-type2__item
+                    .info-type2__num 05
+                    .info-type2__content
+                        .info-type2__title Замена колёс и шин
+                        .info-type2__text Сезонная замена колёс и шин для вашего электромобиля
+
+                .info-type2__item
+                    .info-type2__num 06
+                    .info-type2__content
+                        .info-type2__title Кастомный тюнинг
+                        .info-type2__text Возможность заказать внешний и внутренний тюнинг у наших специалистов
+
+                .info-type2__item
+                    .info-type2__num 07
+                    .info-type2__content
+                        .info-type2__title Возможность подзарядки
+                        .info-type2__text Подзарядка вашего электромобиля в нашем салоне в Санкт-Петербурге
+
+                .info-type2__item
+                    .info-type2__num 08
+                    .info-type2__content
+                        .info-type2__title Заказ запчастей
+                        .info-type2__text Заказ оригинальных запчастей и аксессуаров из Европы
+
+
 
     
     

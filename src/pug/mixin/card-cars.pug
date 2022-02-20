@@ -1,0 +1,29 @@
+mixin card_cars(obj)
+    .card-cars__col 
+        .card-cars__content
+            .row.card-cars__row.card-cars__line1
+                h3.card-cars__title #{obj.title}
+                .card-cars__price #{obj.price}
+                .card-cars__img 
+                    img.page-banner__img(src=`@img/${obj.img}`)
+
+            .row.card-cars__row.card-cars__line2
+                .card-cars__line2-content
+                    .card-cars-info__itm.cci-speed 
+                        .card-cars-info__val #{obj.speed} км/ч
+                        .card-cars-info__label Макс. скорость 
+                    
+                    .card-cars-info__itm.cci-acceleration 
+                        .card-cars-info__val #{obj.vel} c
+                        .card-cars-info__label Разгон 
+                    
+                    if obj.instock 
+                        .card-cars-info__itm.cci-instock                           
+                                span.icon.icon-checkmark
+                                span.card-cars-info__instock В наличии
+                    else
+                        .card-cars-info__itm.cci-nostock 
+
+                    .card-cars-info__itm.cci-btn
+                        a.card-cars-info__button.btn.btn-transparent-blk(href=`${obj.link}`) узнать больше
+                

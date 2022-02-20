@@ -1,0 +1,12 @@
+mixin breadcrumbs(target)
+    .breadcrumbs
+        a.breadcrumbs__link(href="/") главная
+        - let length = target.length 
+        - console.log('length', length)
+        if length > 0 
+            each itm, index in target
+                span.icon.icon-readcrumbs-separation
+                if index === length - 1
+                    span.breadcrumbs__link #{itm.title}
+                else
+                    a.breadcrumbs__link(href=`${itm.href}`) #{itm.title}

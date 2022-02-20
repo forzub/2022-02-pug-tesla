@@ -34,8 +34,8 @@ footer{background: #030303;color:#fff;padding-top: 10px;
 .fu-form__info{color: #B2B2B2;font-weight: 500;font-size:0.667rem; line-height: 1.8;flex: 0 0 auto;width: 100%;margin-bottom: 30px;}
 .fu-form__info a{color:#fff; text-decoration-line: underline;transition: color 0.8s ease 0s;}
 
-.fu-form__button{font-weight: 600;font-size: 0.71rem;line-height: 1.33;letter-spacing: 0.028rem;cursor: pointer;
-    transition: background-color 0.8s ease 0s;
+.fu-form__button{
+    
     text-transform: uppercase;color: #000000;background-color: #fff;
     padding: 10px 20px;border-radius: 30px;
     position: relative; top: -6px;
@@ -45,7 +45,7 @@ footer{background: #030303;color:#fff;padding-top: 10px;
 
 .footer-info__link{font-weight: 500;    font-size: 0.714rem;    line-height: 1.36;    color: #FFFFFF;  transition: color 0.8s ease 0s;}
 .footer-info__up{   font-size: 35px;   color:#fff;    cursor: pointer;  transition: color 0.5s ease 0s; width: 45px;height: 45px; display: flex;justify-content: center;
-    align-items: center;position: fixed; background: #000; border-radius: 50%; border: 2px solid #B2B2B2 ; bottom: 30px; right: 15px;
+    align-items: center;position: fixed; background: #000; border-radius: 50%; border: 2px solid #B2B2B2 ; bottom: 30px; right: 15px;z-index: 10;
 }
 
 .footer-line{padding: 20px 0;}
@@ -71,7 +71,6 @@ footer{background: #030303;color:#fff;padding-top: 10px;
 @media (min-width: 768px){
     .fu-form__info a:hover{color: #B2B2B2;}
     .footer-info__link:hover, .footer-info__up:hover{color: #B2B2B2;}
-    .fu-form__button:hover{background-color: #848484;}
     .footer-menu__link:hover{color: #fff;}
     .footer__confident-link:hover{color: #fff;}
 
