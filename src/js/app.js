@@ -25,11 +25,27 @@ function footer_up_click(){
     window.scrollTo(10, 0);
 }
 
+
+
 // import * as flsFunctions from './modules/functions.js';
 
 let index_banner_swiper = null;
 if (document.querySelector('.banner-slider-background')) {index_banner_swiper = new Swiper('.banner-slider-background',{
     loop : true,
+    autoplay:{
+        delay:5000
+    }
+});}
+
+let saloon_swiper = null;
+if (document.querySelector('.saloon-slider')) {index_banner_swiper = new Swiper('.saloon-slider',{
+    loop : true,
+    slidesPerView: 1.5,
+    spaceBetween: 40,
+    navigation: {
+        nextEl: '.saloon-slider__next',
+        prevEl: '.saloon-slider__prev',
+      },
     autoplay:{
         delay:5000
     }
