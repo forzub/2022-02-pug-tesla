@@ -1,0 +1,80 @@
+extends ./common/base
+
+include ./mixin/template-breadcrumbs
+//- include ./mixin/card
+//- include ./mixin/tab
+
+block vars 
+    - let siteTitle = 'Tesla Model S';
+
+block content
+    section.section
+        .content-container
+            +breadcrumbs([{title : 'автомобили', href : '/cars'}, {title : 'Tesla Model S', href : '/cars'}])
+
+    section.section
+        .content-container.goods 
+            .goods-title       
+                h1.sectiont__title #{siteTitle}
+                .goods-price 8 650 000 ₽
+            .goods-slider__wrp 
+                .goods-slider
+                    .goods-slider__wrapper.swiper-wrapper
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-1.jpg')
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-2.jpg')
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-3.jpg')
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-4.jpg')
+
+                .goods-navslider
+                    .goods-navslider__wrapper.swiper-wrapper
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-1.jpg')
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-2.jpg')
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-3.jpg')
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-4.jpg')
+                
+                .goods-slider__navigation 
+                            span.goods-slider__prev.icon.icon-salon_arrow
+                            span.goods-slider__next.icon.icon-salon_arrow_active
+
+            .goods_params
+            
+
+
+
+    section.ection.page-table
+        .content-container
+            .row.page-table__row
+                .page-table__col 
+                    h2.sectiont-content__title Характеристики Tesla Model S
+                .page-table__col 
+                    .page-table__wrp
+                        table 
+                            tbody 
+                                tr 
+                                    td Батарея
+                                    td 100 кВт·ч
+                
+
+    section.ection.page-content 
+        .content-container
+            .row.page-content__row 
+                .page-content__col 
+                    h2.sectiont-content__title Tesla Model S: особенности и преимущества электромобиля
+                .page-content__col 
+                    p Электромобиль Tesla Model S — революция в мире автомобилестроения. Эта модель призвана уничтожить двигатель внутреннего сгорания и приучить людей использовать только экологически чистый транспорт. На примере Model S в Tesla доказали, что у электромотора масса преимуществ перед бензиновым и дизельным агрегатами.
+                    p 
+                    p По динамическим характеристикам этот автомобиль стоит в одном ряду со знаменитыми суперкарами, а по многим другим параметрам даже превосходит их. С батареей на 100 кВт·ч машина разгоняется до 100 км/ч за 2,1 секунды, что быстрее многих экзотичных гиперкаров, выпускаемых в единичных экземплярах.
+
+
+
+

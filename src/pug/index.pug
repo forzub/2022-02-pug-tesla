@@ -123,21 +123,21 @@ block content
                     .row.saloon-header__row 
                         h2.sectiont-content__title Внутри нашего салона
                         .saloon-slider__navigation 
-                            span.icon.icon-salon_arrow.saloon-slider__prev
-                            span.icon.icon-salon_arrow_active.saloon-slider__next
+                            span.saloon-slider__prev.icon.icon-salon_arrow
+                            span.saloon-slider__next.icon.icon-salon_arrow_active
             
             .saloon__content
                 .saloon-slider
                     .saloon-slider__wrapper.swiper-wrapper
                         .swiper-slide
-                            .saloon-slider__image 
+                            .saloon-slider__image
                                 img.saloon-slider__img(src='@img/sect-slider-1.jpg')
                         .swiper-slide
-                            .saloon-slider__image 
-                                    img.saloon-slider__img(src='@img/sect-slider-2.jpg')
+                            .saloon-slider__image
+                                img.saloon-slider__img(src='@img/sect-slider-2.jpg')
                         .swiper-slide
-                            .saloon-slider__image 
-                                    img.saloon-slider__img(src='@img/sect-slider-3.jpg')
+                            .saloon-slider__image
+                                img.saloon-slider__img(src='@img/sect-slider-3.jpg')
 
                 
 
@@ -148,37 +148,43 @@ block content
         .contact__content
             .content-container        
                 .row.contact__row 
-                    .contact__card
-                        .contact__card__itm
+                    .contact-card.contact-card__info1
+                        .contact-card__itm
                             .contact-content__position россия
-                        .contact__card__itm
+                        .contact-card__itm
                             a.contact-content__phone(href='tel:88005501836') 8 (800) 550-18-36
                         .paragraph_separator 
-                        .contact__card__itm
+                        .contact-card__itm
                             .contact-content__requisites г. Санкт-Петербург, Суздальское шоссе, 65
-                        .contact__card__itm
+                        .contact-card__itm
                             a.contact-content__requisites(href='mailto:info@unicommotors.com') info@unicommotors.com
-                        .contact__card__itm
+                        .contact-card__itm
                             a.contact-content__requisites(href='unicommotors.com' target='_blank') unicommotors.com
+                        .contact-card__itm.contact-card__social
+                            a.contact-card__link(href='#') instagram 
+                            a.contact-card__link(href='#') facebook 
+                    .contact-card.contact-card__map1
+                        .contact-content__map <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.163175616236!2d30.27694321610201!3d60.0620967819212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963517e1e6a3a5%3A0xfb3d86a18c54aedc!2z0KHRg9C30LTQsNC70YzRgdC60L7QtSDRiC4sIDY1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTQzNTY!5e0!3m2!1sru!2sua!4v1645359231381!5m2!1sru!2sua" width='600' height='400' loading="lazy"></iframe>
 
-                    .contact__card
-                        .contact__card__itm
+
+                    .contact-card.contact-card__info2
+                        .contact-card__itm
                             .contact-content__position Украина
-                        .contact__card__itm
+                        .contact-card__itm
                             a.contact-content__phone(href='tel:380662729282') +380-66-272-92-82
                         .paragraph_separator 
-                        .contact__card__itm
+                        .contact-card__itm
                             .contact-content__requisites г. Киев, ул. Изюмская, 1
-                        .contact__card__itm
+                        .contact-card__itm
                             a.contact-content__requisites(href='mailto:get.unicum@gmail.com') get.unicum@gmail.com
-                        .contact__card__itm
+                        .contact-card__itm
                             a.contact-content__requisites(href='unicommotors.com' target='_blank') unicommotors.com
-                        
+                        .contact-card__itm.contact-card__social
+                            a.contact-card__link(href='#') instagram 
+                            a.contact-card__link(href='#') facebook
+                    .contact-card.contact-card__map2
+                        .contact-content__map <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.515947207425!2d30.513913216013158!3d50.412858079470176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3b1e1f93c5%3A0x56ee879cd1264c20!2z0YPQuy4g0JjQt9GO0LzRgdC60LDRjywgMSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1645359269273!5m2!1sru!2sua" width='600' height='400' loading="lazy"></iframe>
 
-        .contact__maps
-            .row.contact__maps-row
-                .contact-content__map-wrp
-                    .contact-content__map <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.163175616236!2d30.27694321610201!3d60.0620967819212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963517e1e6a3a5%3A0xfb3d86a18c54aedc!2z0KHRg9C30LTQsNC70YzRgdC60L7QtSDRiC4sIDY1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTQzNTY!5e0!3m2!1sru!2sua!4v1645359231381!5m2!1sru!2sua" width='600' height='400' loading="lazy"></iframe>
-                .contact-content__map-wrp
-                    .contact-content__map <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.515947207425!2d30.513913216013158!3d50.412858079470176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3b1e1f93c5%3A0x56ee879cd1264c20!2z0YPQuy4g0JjQt9GO0LzRgdC60LDRjywgMSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1645359269273!5m2!1sru!2sua" width='600' height='400' loading="lazy"></iframe>
-            
+
+
+                                            

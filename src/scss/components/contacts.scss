@@ -1,6 +1,9 @@
 .contact{
+
+    
+
     &__header{
-        margin: 0 0 82px 0;
+        margin: 0 0 42px 0;
     }
 
     &__row{
@@ -8,10 +11,30 @@
         align-items: stretch;
     }
 
-    &__card{
-        flex: 0 0 50%;
-        padding: 0  40px 47px 40px;
+    &__content{
+        position: relative;
+    }
+
+    &-card{
+        flex: 0 0 100%;        
         font-weight: 500;
+
+        & a{
+            @media (min-width: 992px){
+                opacity: 1;
+                transition: opacity 0.8s ease 0s;
+            }
+        }
+    
+        & a:hover{
+            @media (min-width: 992px){
+                opacity: 0.5;
+            }
+        }
+
+        @media (min-width: 992px){
+            flex: 0 0 50%; 
+        }
     }
 
     &-content__position{
@@ -23,43 +46,127 @@
     }
 
     &-content__phone{
-        font-size: 1.714rem;
+        font-size: 1.314rem;
         line-height: 1.8;
         color:#000;
+
+        @media (min-width: 576px){
+            font-size: 1.714rem;
+        }
+
+        @media (min-width: 992px){
+            opacity: 1;
+            transition: opacity 0.8s ease 0s;
+        }
     }
+
+    &-content__phone:hover{
+        opacity: 0.5;
+    }
+
 
     &-content__requisites{
         font-weight: 300;
         line-height: 1.8;
         color:#000;
+       
+    }
+
+    &-card__social{
+        margin-top: 50px;
+    }
+
+    &-card__link{
+        font-size: 0.761rem;
+        line-height: 1.37;
+        letter-spacing: 0.028rem;
+        text-transform: uppercase;
+        color: #B2B2B2;
+        margin-left: 50px;      
+    }
+
+
+    &-card__link:first-child{
+        margin-left: 0;
     }
 
     
+    &-card__info1{
+        order: 0;
+        padding: 40px  40px 47px 40px;
+        
+        @media (min-width: 992px){
+            padding: 40px  20px 47px 40px;
+        }
 
-
-
-
-
-
-
-    &__maps-row{
-        margin: 0 -40px;
+        @media (min-width: 1200px){
+            padding: 40px  40px 47px 40px;
+        } 
+            
     }
 
-    &-content__map-wrp{
-        padding: 0 40px;
-        flex: 0 0 50%;
-        position: relative;
+    &-card__map1{
+        order: 1;
         height: 536px;
+
+        @media (min-width: 992px){
+            order: 2;
+        }
     }
 
-    &-content__map{
-        position: absolute;
-        top: 0;
-        left: 40px;
-        bottom: 0;
-        right: 40px;
+    &-card__info2{
+        order: 2;
+        padding: 40px  40px 47px 40px;
+        
+        @media (min-width: 992px){
+            order: 1;
+            padding: 40px  40px 47px 20px;
+        }
+
+        @media (min-width: 1200px){
+            padding: 40px  40px 47px 40px;
+        } 
     }
+
+    &-card__map2{
+        order: 3;
+        height: 536px;
+
+        
+    }
+
+    
+    &-card__map1 &-content__map{
+        
+        height: 536px;
+
+        @media (min-width: 992px){
+            position: absolute;       
+            left: 0px;
+            bottom: 0;
+            right: 50%;
+            padding-right: 20px;
+        }
+        @media (min-width: 1200px){
+            padding-right: 40px;
+        }
+    }
+
+    &-card__map2 &-content__map{
+        height: 536px;
+        
+        @media (min-width: 992px){
+            position: absolute;       
+            left: 50%;
+            bottom: 0;
+            right: 0;
+            padding-left: 20px;
+        }
+        @media (min-width: 1200px){
+            padding-left: 40px;
+        }
+    }
+
 
     &-content__map iframe{
         width: 100% !important;
@@ -69,7 +176,21 @@
     }
 }
 
+
 .paragraph_separator{
     margin: 20px 0;
     border-bottom: 2px solid #E5E5E5;
 }
+
+
+
+
+@media (min-width: 576px){}
+
+@media (min-width: 728px){}
+
+@media (min-width: 992px){}
+
+@media (min-width: 1200px){}
+
+@media (min-width: 1400px){}

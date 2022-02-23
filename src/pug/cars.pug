@@ -1,6 +1,7 @@
 extends ./common/base
 
 include ./mixin/template-breadcrumbs
+include ./mixin/card-cars
 //- include ./mixin/cardSlider
 //- include ./mixin/tab
 
@@ -8,6 +9,25 @@ block vars
     - let siteTitle = 'Автомобили';
 
 block content
-
+    section.section
+        .content-container
+            +breadcrumbs([{title : 'автомобили', href : '/cars'}])
+            .section__content
+                h1.sectiont__title #{siteTitle}
     
-    
+        .catalog-sect__row.row 
+            +card_cars({ title: 'Model S', price: '8 650 000 ₽', speed: '250', vel:'3.2', instock : true , img : 'model-s.jpg' , link: '#'} )
+            +card_cars({ title: 'Model 3', price: '5 960 000 ₽', speed: '177', vel:'3.3', instock : false , img : 'model-3.jpg' , link: '#'} )
+            +card_cars({ title: 'Model X', price: '9 200 000 ₽', speed: '250', vel:'3.9', instock : false , img : 'model-x.jpg' , link: '#'} )
+            +card_cars({ title: 'Model Y', price: '6 410 000 ₽', speed: '250', vel:'3.7', instock : false , img : 'model-y.jpg' , link: '#'} )
+            +card_cars({ title: 'CyberTruck', price: '9 200 000 ₽', speed: '250', vel:'3.9', instock : false , img : 'cyberTruck.jpg' , link: '#'} )
+            +card_cars({ title: 'Roadster', price: '6 410 000 ₽', speed: '250', vel:'3.7', instock : false , img : 'roadster.jpg' , link: '#'} )
+    section.ection.page-content 
+        .content-container
+            .row.page-content__row 
+                .page-content__col 
+                    h2.sectiont-content__title Создан для эффективности
+                .page-content__col 
+                    p Обладая самым низким на Земле коэффициентом аэродинамического сопротивления и непревзойденной эффективностью, Model S создана для скорости и дальности полета. В сочетании с более широким кузовом и шасси эти элементы помогут вам двигаться по прямой или проходить повороты быстрее, чем когда-либо.
+                    p Максимальная концентрация на вождении: никаких подруливаний, никаких переключений. Model S — лучшая машина для вождения и лучшая машина для вождения.
+                    p Ступенчатые, ориентированные на производительность колеса и шины удерживают автомобиль на месте и передают еще больше мощности на дорогу.

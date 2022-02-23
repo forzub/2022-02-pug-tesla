@@ -16,8 +16,19 @@
 
 .baner-content-bx{position: relative;}
 .banner-slider-background{position: absolute;z-index: 0; top: 0;left: 0;bottom:0;width: 100%;overflow: hidden;}
-.banner-slider__image{text-align: center;}
-.banner-slider__image img{max-width: 100%;}
+
+.banner-slider__image{
+    text-align: center;
+}
+.banner-slider__image img{
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+
+
+
 
 .banner-slider-textlayer{    
     display: flex;

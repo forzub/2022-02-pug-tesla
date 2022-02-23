@@ -1,11 +1,28 @@
 .catalog-sect__row{
     align-items: stretch;
     margin: 0 -15px 40px -15px;
+    position: relative;
+    z-index: 0;
 
     @media (min-width: 900px){
         margin: 0 0 40px 0;
     }
 }
+
+.catalog-sect__row::after,.catalog-sect__row::before{
+    position: absolute;
+    content:'';
+    border-top: 2px solid #fff;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+}
+.catalog-sect__row::after{
+    top:0;
+}
+.catalog-sect__row::before{
+    bottom: 0;
+}   
 
 .card-cars__col{
     flex: 0 0 100%;

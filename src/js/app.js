@@ -40,13 +40,28 @@ if (document.querySelector('.banner-slider-background')) {index_banner_swiper = 
 let saloon_swiper = null;
 if (document.querySelector('.saloon-slider')) {index_banner_swiper = new Swiper('.saloon-slider',{
     loop : true,
-    slidesPerView: 1.5,
-    spaceBetween: 40,
+    
     navigation: {
         nextEl: '.saloon-slider__next',
         prevEl: '.saloon-slider__prev',
-      },
+        },
     autoplay:{
         delay:5000
-    }
+        },
+    breakpoints: {
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        
+        480: {
+            
+        },
+        
+        728: {
+            slidesPerView: 1.5,
+            spaceBetween: 40,
+        }
+        }   
 });}
