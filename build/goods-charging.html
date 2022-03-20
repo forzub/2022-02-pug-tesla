@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?v=1647790616472"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap&v=20220320173655" rel="stylesheet">
+    <title>Wall</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="top-line" id="top_menu">
+          <div class="container">
+            <div class="row">
+              <div class="top-line__col top-line__logo"><a class="top-logo" href="/"><span class="icon icon-Logo_tesla"></span></a></div>
+              <div class="top-line__col top__location"> 
+                <div class="top__choose-location">
+                  <div class="top__location-btn">санкт-петербург</div>
+                </div>
+              </div>
+              <div class="top-line__col top-line__space"></div>
+              <nav class="top-line__col top-menu"> 
+                <ul class="top-menu__list"> 
+                  <li class="mob-only" onclick="mob_menu_close(&quot;top_menu&quot;)"><span class="icon icon-modal_close"></span></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/cars.html">АВТОМОБИЛИ</a></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/accessories.html">АКСЕССАУРЫ</a></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/charging.html">ЗАРЯДНЫЕ УСТРОЙСТВА</a></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/service.html">СЕРВИС</a></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/сontacts.html">КОНТАКТЫ</a></li>
+                </ul>
+              </nav>
+              <div class="top-line__col top__phone"> <a class="top-phone__link" href="tel:88005501836">8 (800) 550-18-36</a></div>
+              <div class="top-line__col top__requestcall"> 
+                <button class="top__requestcall-btn" type="text">заказать звонок</button>
+              </div>
+              <div class="top-line__col top-mobile__buttons">
+                <div class="top-menu__btn top-mob__menu" onclick="mob_menu_onclick()"><span class="top-mob__menu-tx icon icon-menu"></span></div>
+                <div class="top-menu__btn top-mob__cat" onclick="mob_cat_onclick()"><span class="top-mob__cat-tx icon icon-Logo"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-catalog" id="top_cat">
+          <div class="container">
+            <div class="row">
+              <nav class="top-catalog__nav"> 
+                <ul class="top-catalog__list">
+                  <li class="mob-only"><span class="icon icon-modal_close" onclick="mob_menu_close(&quot;top_cat&quot;)"></span></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-auto.html">Model S</a></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-auto.html">Model 3</a></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-auto.html">Model X</a></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-auto.html">Model Y</a></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-charging.html">CYBERTRUCK</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section">
+          <div class="content-container">
+            <div class="breadcrumbs"><a class="breadcrumbs__link" href="/">главная</a><span class="icon icon-readcrumbs-separation"></span><a class="breadcrumbs__link" href="/charging.html">ЗАРЯДНЫЕ УСТРОЙСТВА</a><span class="icon icon-readcrumbs-separation"></span><span class="breadcrumbs__link">Wall</span>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="content-container goods"> 
+            <div class="goods-title">      
+              <h1 class="sectiont__title">Wall</h1>
+              <div class="goods-price">38 000 ₽</div>
+            </div>
+            <div class="goods-slider__wrp"> 
+              <div class="goods-slider">
+                <div class="goods-slider__wrapper swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="goods-slider__image"><picture><source srcset="img/goods2-1.webp" type="image/webp"><img class="goods-slider__img" src="img/goods2-1.jpg"></picture></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="goods-slider__image"><picture><source srcset="img/goods2-2.webp" type="image/webp"><img class="goods-slider__img" src="img/goods2-2.jpg"></picture></div>
+                  </div>
+                </div>
+              </div>
+              <div class="goods-navslider">
+                <div class="goods-navslider__wrapper swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="goods-slider__image"><picture><source srcset="img/goods2-1.webp" type="image/webp"><img class="goods-slider__img" src="img/goods2-1.jpg"></picture></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="goods-slider__image"><picture><source srcset="img/goods2-2.webp" type="image/webp"><img class="goods-slider__img" src="img/goods2-2.jpg"></picture></div>
+                  </div>
+                </div>
+              </div>
+              <div class="goods-slider__navigation"> <span class="goods-slider__prev icon icon-salon_arrow"></span><span class="goods-slider__next icon icon-salon_arrow_active">           </span></div>
+            </div>
+            <form class="goods-params__form" id="goods-form" name="goods-form">
+              <div class="goods-params">
+                <div class="paragraph_separator"></div>
+                <div class="goods-params__items">
+                  <div class="goods-params__subtitle">МОЩНОСТЬ</div>
+                  <div class="goods-params__item">
+                    <input class="goods-params__default-radio" id="power1" type="radio" name="power" value="6,6_кВт" checked>
+                    <label class="goods-params__default-label" for="power1"><strong>6,6 кВт</strong> </label>
+                  </div>
+                  <div class="goods-params__item">
+                    <input class="goods-params__default-radio" id="power2" type="radio" name="power" value="11_кВт">
+                    <label class="goods-params__default-label" for="power2"><strong>11 кВт</strong> </label>
+                  </div>
+                  <div class="goods-params__item">
+                    <input class="goods-params__default-radio" id="power3" type="radio" name="power" value="22_кВт">
+                    <label class="goods-params__default-label" for="power3"><strong>22 кВт</strong> </label>
+                  </div>
+                </div>
+                <div class="goods-params__items">
+                  <div class="goods-params__subtitle">ТИП КОННЕКТОРА</div>
+                  <div class="goods-params__items-txt">
+                    <div class="goods-params__item">
+                      <input class="goods-params__default-radio" id="connector1" type="radio" name="connector" value="type1" checked>
+                      <label class="goods-params__default-label" for="connector1"><strong>Кабель Тип 1</strong></label>
+                    </div>
+                    <div class="goods-params__item">
+                      <input class="goods-params__default-radio" id="connector2" type="radio" name="connector" value="type2" checked>
+                      <label class="goods-params__default-label" for="connector2"><strong>Кабель Тип 2</strong></label>
+                    </div>
+                    <div class="goods-params__item">
+                      <input class="goods-params__default-radio" id="connector3" type="radio" name="connector" value="type3" checked>
+                      <label class="goods-params__default-label" for="connector3"><strong>Кабель Тип 3</strong></label>
+                    </div>
+                  </div>
+                  <div class="goods-params__items-img-bx"><picture><source srcset="img/goods2-2-serv-1.webp" type="image/webp"><img class="goods-params__img gp__connector1" src="img/goods2-2-serv-1.jpg"></picture><img class="goods-params__img gp__connector2" src="img/goods2-2-serv-2.jpg"><img class="goods-params__img gp__connector3" src="img/goods2-2-serv-3.jpg"></div>
+                </div>
+                <div class="goods-params__items">
+                  <div class="goods-params__subtitle">Выберите цвет корпуса</div>
+                  <div class="goods-params__item">
+                    <input class="goods-params__custom-radio" id="casecolor1" type="radio" name="casecolor" value="white" checked>
+                    <label class="goods-params__casecolor-label" for="casecolor1" style="background:#ffffff;"><strong></label>
+                  </div>
+                  <div class="goods-params__item">
+                    <input class="goods-params__custom-radio" id="casecolor2" type="radio" name="casecolor" value="black">
+                    <label class="goods-params__casecolor-label" for="casecolor2" style="background:#000000;"></label>
+                  </div>
+                </div>
+                <div class="goods-params__items">
+                  <div class="goods-params__subtitle">Монетизация</div><label class="switch">
+<input type="checkbox" name='monetization'>
+<span class="slider round"></span>
+</label>
+                </div>
+                <div class="goods-params__items">
+                  <div class="goods-params__subtitle">Дисплей-экран</div><label class="switch">
+<input type="checkbox" name='display'>
+<span class="slider round"></span>
+</label>
+                </div>
+                <div class="goods-params__items">
+                  <div class="goods-params__subtitle">Подиум</div><label class="switch">
+<input type="checkbox" name='podium'>
+<span class="slider round"></span>
+</label>
+                </div>
+                <div class="goods-params__btn-bx"> 
+                  <button class="btn btn-black goods-params__btn" type="submit">перейти к покупке</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <form class="footer-form" id="fotter_form" action="#">
+          <div class="content-container">
+            <h2 class="footer-form__title">Задайте нам вопрос</h2>
+            <div class="footer-form__content"> 
+              <div class="fu-left">
+                <div class="fu-form_item">
+                  <label class="fu-form__label" for="fuFormName">Как к Вам обращаться?*</label>
+                  <input class="fu-form__input" id="fuFormName" name="name" placeholder="имя">
+                </div>
+                <div class="fu-form_item">
+                  <label class="fu-form__label" for="fuFormEmail">Email*</label>
+                  <input class="fu-form__input" id="fuFormEmail" name="email" placeholder="e-mail">
+                </div>
+                <div class="fu-form_item">
+                  <label class="fu-form__label" for="fuFormPhone">Телефон*</label>
+                  <input class="fu-form__input" id="fuFormPhone" name="phone" placeholder="телефон">
+                </div>
+              </div>
+              <div class="fu-right">
+                <div class="fu-form_item">
+                  <label class="fu-form__label" for="fuFormMessage">Ваш вопрос</label>
+                  <textarea class="fu-form__textarea" id="fuFormMessage" name="Message" placeholder="Сообщение">Здравствуйте! На днях я заходил к вам в салон и присмотрел автомобиль. Я готов его купить, но есть один нюанс. Это будет подарок. Возможно ли осуществить доставку автомобиля в другой город? Если можно, то хотелось бы заказать доставку на определенный день, место и время. Пожалуйста, свяжитесь со мной. Спасибо!</textarea>
+                </div>
+                <div class="fu-form_item fu-form__info-bx">
+                  <div class="fu-form__info">Нажимая на кнопку, вы соглашаетесь на обработку ваших персональных данных в соответствии с <a href='#'>политикой конфиденциальности</a></div>
+                  <button class="btn btn-white fu-form__button" type="submit">отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="footer-info"> 
+          <div class="content-container">
+            <div class="row">
+              <div class="footer-info__col footer-info__phone"> <a class="footer-info__link" href="tel:88005501836">8 (800) 550-18-36</a></div>
+              <div class="footer-info__col footer-info__up" onclick="footer_up_click()"><span class="icon icon-footer_up"></span></div>
+              <div class="footer-info__col footer-info__email"> <a class="footer-info__link" href="mailto:info@unicommotors.com">info@unicommotors.com</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-line"> 
+          <div class="content-container">
+            <div class="row"> 
+              <div class="footer-line__col footer__copyright">UNICOM MOTORS (C) 2021</div>
+              <div class="footer-line__col footer__menu">
+                <ul class="footer-menu__list"> 
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/cars.html">АВТОМОБИЛИ</a></li>
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/accessories.html">АКСЕССАУРЫ</a></li>
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/charging.html">ЗАРЯДНЫЕ УСТРОЙСТВА</a></li>
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/service.html">СЕРВИС</a></li>
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/сontacts.html">КОНТАКТЫ</a></li>
+                </ul>
+              </div>
+              <div class="footer-line__col footer__confident"><a class="footer__confident-link" href="#">политика конфиденциальности</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="form__back form-request">
+        <form class="form-pop" id="form-request" action="#">
+          <div class="form-pop__close"> <span class="icon icon-modal_close"></span></div>
+          <h2 class="form-pop__title">Заказать звонок</h2>
+          <h2 class="form-pop__sub-title">Заполните необходимые данные, и наш менеджер свяжется с вами для осуществления покупки</h2>
+          <div class="form-pop__content"> 
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-req__input-name">Как к Вам обращаться?*</label>
+              <input class="form-pop__input" id="form-req__input-name" type="text" placeholder="имя"/>
+            </div>
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-req__input-name">Телефон*</label>
+              <input class="form-pop__input" id="form-req__input-phone" type="text" placeholder="имя"/>
+            </div>
+            <div class="form-pop__item"> 
+              <button class="form-pop__button" type="submit">заказать звонок</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="form__back form_confirm">
+        <form class="form-pop" id="form-confirm" action="#">
+          <div class="form-pop__close"> <span class="icon icon-modal_close"></span></div>
+          <h2 class="form-pop__title">Подтверждение покупки</h2>
+          <h2 class="form-pop__sub-title">Заполните необходимые данные, и наш менеджер свяжется с вами для осуществления покупки</h2>
+          <div class="form-pop__content"> 
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-conf__input-name">Как к Вам обращаться?*</label>
+              <input class="form-pop__input" id="form-conf__input-name" type="text" placeholder="имя"/>
+            </div>
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-conf__input-name">Email*</label>
+              <input class="form-pop__input" id="form-conf__input-email" type="text" placeholder="email"/>
+            </div>
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-conf__input-name">Телефон*</label>
+              <input class="form-pop__input" id="form-conf__input-phone" type="text" placeholder="телефон"/>
+            </div>
+            <div class="form-pop__item"> 
+              <div class="form-conf__amount">8 650 000 ₽</div>
+            </div>
+            <div class="form-pop__item"> 
+              <button class="form-pop__button" type="submit">оформить заказ</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script src="js/swiper-bundle.min.js?v=20220320173655"></script>
+      <script src="js/app.js?v=20220320173655"></script>
+    </div>
+  </body>
+</html>

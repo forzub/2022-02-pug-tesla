@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?v=1647790615890"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap&v=20220320173655" rel="stylesheet">
+    <title>Автомобили</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="top-line" id="top_menu">
+          <div class="container">
+            <div class="row">
+              <div class="top-line__col top-line__logo"><a class="top-logo" href="/"><span class="icon icon-Logo_tesla"></span></a></div>
+              <div class="top-line__col top__location"> 
+                <div class="top__choose-location">
+                  <div class="top__location-btn">санкт-петербург</div>
+                </div>
+              </div>
+              <div class="top-line__col top-line__space"></div>
+              <nav class="top-line__col top-menu"> 
+                <ul class="top-menu__list"> 
+                  <li class="mob-only" onclick="mob_menu_close(&quot;top_menu&quot;)"><span class="icon icon-modal_close"></span></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/cars.html">АВТОМОБИЛИ</a></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/accessories.html">АКСЕССАУРЫ</a></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/charging.html">ЗАРЯДНЫЕ УСТРОЙСТВА</a></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/service.html">СЕРВИС</a></li>
+                  <li class="top-menu__itm"><a class="top-menu__link" href="/сontacts.html">КОНТАКТЫ</a></li>
+                </ul>
+              </nav>
+              <div class="top-line__col top__phone"> <a class="top-phone__link" href="tel:88005501836">8 (800) 550-18-36</a></div>
+              <div class="top-line__col top__requestcall"> 
+                <button class="top__requestcall-btn" type="text">заказать звонок</button>
+              </div>
+              <div class="top-line__col top-mobile__buttons">
+                <div class="top-menu__btn top-mob__menu" onclick="mob_menu_onclick()"><span class="top-mob__menu-tx icon icon-menu"></span></div>
+                <div class="top-menu__btn top-mob__cat" onclick="mob_cat_onclick()"><span class="top-mob__cat-tx icon icon-Logo"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-catalog" id="top_cat">
+          <div class="container">
+            <div class="row">
+              <nav class="top-catalog__nav"> 
+                <ul class="top-catalog__list">
+                  <li class="mob-only"><span class="icon icon-modal_close" onclick="mob_menu_close(&quot;top_cat&quot;)"></span></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-auto.html">Model S</a></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-auto.html">Model 3</a></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-auto.html">Model X</a></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-auto.html">Model Y</a></li>
+                  <li class="top-catalog__itm"><a class="top-catalog__link" href="/goods-charging.html">CYBERTRUCK</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section">
+          <div class="content-container">
+            <div class="breadcrumbs"><a class="breadcrumbs__link" href="/">главная</a><span class="icon icon-readcrumbs-separation"></span><span class="breadcrumbs__link">автомобили</span>
+            </div>
+            <div class="section__content">
+              <h1 class="sectiont__title">Автомобили</h1>
+            </div>
+            <div class="catalog-sect__row row"> 
+              <div class="card-cars__col"> 
+                <div class="card-cars__content">
+                  <div class="row card-cars__row card-cars__line1">
+                    <h3 class="card-cars__title">Model S</h3>
+                    <div class="card-cars__price">8 650 000 ₽</div>
+                    <div class="card-cars__img"> <picture><source srcset="img/model-s.webp" type="image/webp"><img class="page-banner__img" src="img/model-s.jpg"/></picture></div>
+                  </div>
+                  <div class="row card-cars__row card-cars__line2">
+                    <div class="card-cars__line2-content">
+                      <div class="card-cars-info__itm cci-speed"> 
+                        <div class="card-cars-info__val">250 км/ч</div>
+                        <div class="card-cars-info__label">Макс. скорость </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-acceleration"> 
+                        <div class="card-cars-info__val">3.2 c</div>
+                        <div class="card-cars-info__label">Разгон </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-instock">                          <span class="icon icon-checkmark"></span><span class="card-cars-info__instock">В наличии</span></div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-cars__col"> 
+                <div class="card-cars__content">
+                  <div class="row card-cars__row card-cars__line1">
+                    <h3 class="card-cars__title">Model 3</h3>
+                    <div class="card-cars__price">5 960 000 ₽</div>
+                    <div class="card-cars__img"> <picture><source srcset="img/model-3.webp" type="image/webp"><img class="page-banner__img" src="img/model-3.jpg"/></picture></div>
+                  </div>
+                  <div class="row card-cars__row card-cars__line2">
+                    <div class="card-cars__line2-content">
+                      <div class="card-cars-info__itm cci-speed"> 
+                        <div class="card-cars-info__val">177 км/ч</div>
+                        <div class="card-cars-info__label">Макс. скорость </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-acceleration"> 
+                        <div class="card-cars-info__val">3.3 c</div>
+                        <div class="card-cars-info__label">Разгон </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-nostock"> </div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-cars__col"> 
+                <div class="card-cars__content">
+                  <div class="row card-cars__row card-cars__line1">
+                    <h3 class="card-cars__title">Model X</h3>
+                    <div class="card-cars__price">9 200 000 ₽</div>
+                    <div class="card-cars__img"> <picture><source srcset="img/model-x.webp" type="image/webp"><img class="page-banner__img" src="img/model-x.jpg"/></picture></div>
+                  </div>
+                  <div class="row card-cars__row card-cars__line2">
+                    <div class="card-cars__line2-content">
+                      <div class="card-cars-info__itm cci-speed"> 
+                        <div class="card-cars-info__val">250 км/ч</div>
+                        <div class="card-cars-info__label">Макс. скорость </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-acceleration"> 
+                        <div class="card-cars-info__val">3.9 c</div>
+                        <div class="card-cars-info__label">Разгон </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-nostock"> </div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-cars__col"> 
+                <div class="card-cars__content">
+                  <div class="row card-cars__row card-cars__line1">
+                    <h3 class="card-cars__title">Model Y</h3>
+                    <div class="card-cars__price">6 410 000 ₽</div>
+                    <div class="card-cars__img"> <picture><source srcset="img/model-y.webp" type="image/webp"><img class="page-banner__img" src="img/model-y.jpg"/></picture></div>
+                  </div>
+                  <div class="row card-cars__row card-cars__line2">
+                    <div class="card-cars__line2-content">
+                      <div class="card-cars-info__itm cci-speed"> 
+                        <div class="card-cars-info__val">250 км/ч</div>
+                        <div class="card-cars-info__label">Макс. скорость </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-acceleration"> 
+                        <div class="card-cars-info__val">3.7 c</div>
+                        <div class="card-cars-info__label">Разгон </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-nostock"> </div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-cars__col"> 
+                <div class="card-cars__content">
+                  <div class="row card-cars__row card-cars__line1">
+                    <h3 class="card-cars__title">CyberTruck</h3>
+                    <div class="card-cars__price">9 200 000 ₽</div>
+                    <div class="card-cars__img"> <picture><source srcset="img/cyberTruck.webp" type="image/webp"><img class="page-banner__img" src="img/cyberTruck.jpg"/></picture></div>
+                  </div>
+                  <div class="row card-cars__row card-cars__line2">
+                    <div class="card-cars__line2-content">
+                      <div class="card-cars-info__itm cci-speed"> 
+                        <div class="card-cars-info__val">250 км/ч</div>
+                        <div class="card-cars-info__label">Макс. скорость </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-acceleration"> 
+                        <div class="card-cars-info__val">3.9 c</div>
+                        <div class="card-cars-info__label">Разгон </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-nostock"> </div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-cars__col"> 
+                <div class="card-cars__content">
+                  <div class="row card-cars__row card-cars__line1">
+                    <h3 class="card-cars__title">Roadster</h3>
+                    <div class="card-cars__price">6 410 000 ₽</div>
+                    <div class="card-cars__img"> <picture><source srcset="img/roadster.webp" type="image/webp"><img class="page-banner__img" src="img/roadster.jpg"/></picture></div>
+                  </div>
+                  <div class="row card-cars__row card-cars__line2">
+                    <div class="card-cars__line2-content">
+                      <div class="card-cars-info__itm cci-speed"> 
+                        <div class="card-cars-info__val">250 км/ч</div>
+                        <div class="card-cars-info__label">Макс. скорость </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-acceleration"> 
+                        <div class="card-cars-info__val">3.7 c</div>
+                        <div class="card-cars-info__label">Разгон </div>
+                      </div>
+                      <div class="card-cars-info__itm cci-nostock"> </div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ection page-content"> 
+          <div class="content-container">
+            <div class="row page-content__row"> 
+              <div class="page-content__col"> 
+                <h2 class="sectiont-content__title">Создан для эффективности</h2>
+              </div>
+              <div class="page-content__col"> 
+                <p>Обладая самым низким на Земле коэффициентом аэродинамического сопротивления и непревзойденной эффективностью, Model S создана для скорости и дальности полета. В сочетании с более широким кузовом и шасси эти элементы помогут вам двигаться по прямой или проходить повороты быстрее, чем когда-либо.</p>
+                <p>Максимальная концентрация на вождении: никаких подруливаний, никаких переключений. Model S — лучшая машина для вождения и лучшая машина для вождения.</p>
+                <p>Ступенчатые, ориентированные на производительность колеса и шины удерживают автомобиль на месте и передают еще больше мощности на дорогу.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <form class="footer-form" id="fotter_form" action="#">
+          <div class="content-container">
+            <h2 class="footer-form__title">Задайте нам вопрос</h2>
+            <div class="footer-form__content"> 
+              <div class="fu-left">
+                <div class="fu-form_item">
+                  <label class="fu-form__label" for="fuFormName">Как к Вам обращаться?*</label>
+                  <input class="fu-form__input" id="fuFormName" name="name" placeholder="имя">
+                </div>
+                <div class="fu-form_item">
+                  <label class="fu-form__label" for="fuFormEmail">Email*</label>
+                  <input class="fu-form__input" id="fuFormEmail" name="email" placeholder="e-mail">
+                </div>
+                <div class="fu-form_item">
+                  <label class="fu-form__label" for="fuFormPhone">Телефон*</label>
+                  <input class="fu-form__input" id="fuFormPhone" name="phone" placeholder="телефон">
+                </div>
+              </div>
+              <div class="fu-right">
+                <div class="fu-form_item">
+                  <label class="fu-form__label" for="fuFormMessage">Ваш вопрос</label>
+                  <textarea class="fu-form__textarea" id="fuFormMessage" name="Message" placeholder="Сообщение">Здравствуйте! На днях я заходил к вам в салон и присмотрел автомобиль. Я готов его купить, но есть один нюанс. Это будет подарок. Возможно ли осуществить доставку автомобиля в другой город? Если можно, то хотелось бы заказать доставку на определенный день, место и время. Пожалуйста, свяжитесь со мной. Спасибо!</textarea>
+                </div>
+                <div class="fu-form_item fu-form__info-bx">
+                  <div class="fu-form__info">Нажимая на кнопку, вы соглашаетесь на обработку ваших персональных данных в соответствии с <a href='#'>политикой конфиденциальности</a></div>
+                  <button class="btn btn-white fu-form__button" type="submit">отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="footer-info"> 
+          <div class="content-container">
+            <div class="row">
+              <div class="footer-info__col footer-info__phone"> <a class="footer-info__link" href="tel:88005501836">8 (800) 550-18-36</a></div>
+              <div class="footer-info__col footer-info__up" onclick="footer_up_click()"><span class="icon icon-footer_up"></span></div>
+              <div class="footer-info__col footer-info__email"> <a class="footer-info__link" href="mailto:info@unicommotors.com">info@unicommotors.com</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-line"> 
+          <div class="content-container">
+            <div class="row"> 
+              <div class="footer-line__col footer__copyright">UNICOM MOTORS (C) 2021</div>
+              <div class="footer-line__col footer__menu">
+                <ul class="footer-menu__list"> 
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/cars.html">АВТОМОБИЛИ</a></li>
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/accessories.html">АКСЕССАУРЫ</a></li>
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/charging.html">ЗАРЯДНЫЕ УСТРОЙСТВА</a></li>
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/service.html">СЕРВИС</a></li>
+                  <li class="footer-menu__itm"><a class="footer-menu__link" href="/сontacts.html">КОНТАКТЫ</a></li>
+                </ul>
+              </div>
+              <div class="footer-line__col footer__confident"><a class="footer__confident-link" href="#">политика конфиденциальности</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="form__back form-request">
+        <form class="form-pop" id="form-request" action="#">
+          <div class="form-pop__close"> <span class="icon icon-modal_close"></span></div>
+          <h2 class="form-pop__title">Заказать звонок</h2>
+          <h2 class="form-pop__sub-title">Заполните необходимые данные, и наш менеджер свяжется с вами для осуществления покупки</h2>
+          <div class="form-pop__content"> 
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-req__input-name">Как к Вам обращаться?*</label>
+              <input class="form-pop__input" id="form-req__input-name" type="text" placeholder="имя"/>
+            </div>
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-req__input-name">Телефон*</label>
+              <input class="form-pop__input" id="form-req__input-phone" type="text" placeholder="имя"/>
+            </div>
+            <div class="form-pop__item"> 
+              <button class="form-pop__button" type="submit">заказать звонок</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="form__back form_confirm">
+        <form class="form-pop" id="form-confirm" action="#">
+          <div class="form-pop__close"> <span class="icon icon-modal_close"></span></div>
+          <h2 class="form-pop__title">Подтверждение покупки</h2>
+          <h2 class="form-pop__sub-title">Заполните необходимые данные, и наш менеджер свяжется с вами для осуществления покупки</h2>
+          <div class="form-pop__content"> 
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-conf__input-name">Как к Вам обращаться?*</label>
+              <input class="form-pop__input" id="form-conf__input-name" type="text" placeholder="имя"/>
+            </div>
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-conf__input-name">Email*</label>
+              <input class="form-pop__input" id="form-conf__input-email" type="text" placeholder="email"/>
+            </div>
+            <div class="form-pop__item"> 
+              <label class="form-pop__label" for="form-conf__input-name">Телефон*</label>
+              <input class="form-pop__input" id="form-conf__input-phone" type="text" placeholder="телефон"/>
+            </div>
+            <div class="form-pop__item"> 
+              <div class="form-conf__amount">8 650 000 ₽</div>
+            </div>
+            <div class="form-pop__item"> 
+              <button class="form-pop__button" type="submit">оформить заказ</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script src="js/swiper-bundle.min.js?v=20220320173655"></script>
+      <script src="js/app.js?v=20220320173655"></script>
+    </div>
+  </body>
+</html>

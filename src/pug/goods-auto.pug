@@ -1,0 +1,204 @@
+extends ./common/base
+
+include ./mixin/template-breadcrumbs
+//- include ./mixin/card
+//- include ./mixin/tab
+
+block vars 
+    - let siteTitle = 'Model S';
+
+block content
+    section.section
+        .content-container
+            +breadcrumbs([{title : 'автомобили', href : '/cars.html'}, {title : 'Model S', href : '/cars'}])
+
+    section.section
+        .content-container.goods 
+            .goods-title       
+                h1.sectiont__title #{siteTitle}
+                .goods-price 8 650 000 ₽
+
+            .goods-slider__wrp 
+                .goods-slider
+                    .goods-slider__wrapper.swiper-wrapper
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-1.jpg')
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-2.jpg')
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-3.jpg')
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-4.jpg')
+
+                .goods-navslider
+                    .goods-navslider__wrapper.swiper-wrapper
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-1.jpg')
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-2.jpg')
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-3.jpg')
+                        .swiper-slide
+                            .goods-slider__image
+                                img.goods-slider__img(src='@img/goods-model-s-4.jpg')
+                
+                .goods-slider__navigation 
+                    span.goods-slider__prev.icon.icon-salon_arrow
+                    span.goods-slider__next.icon.icon-salon_arrow_active
+
+            form#goods-form.goods-params__form(name='goods-form')
+                .goods-params
+                    .paragraph_separator
+                    .goods-params__title Конфигуратор
+                    .goods-params__items
+                        .goods-params__subtitle Выберите тип автомобиля
+                        .goods-params__item.goods-params__radiotext 
+                            input.goods-params__default-radio#autotype1(type="radio" name='autotype' value='Long Range' checked) 
+                            label.goods-params__default-label(for="autotype1") <span><strong>Long Range</strong> Полный привод с системой Dual Motor</span>
+                        .goods-params__item.goods-params__radiotext
+                            input.goods-params__default-radio#autotype2(type="radio" name='autotype' value='Plaid') 
+                            label.goods-params__default-label(for="autotype2")  <span><strong>Plaid</strong>Трехмоторный полный привод</span>
+
+                    .goods-params__items
+                        .goods-params__subtitle Выберите цвет кузова
+                        .goods-params__widgets    
+                            .goods-params__widget
+                                input.goods-params__custom-radio#bodycolor1(type="radio" name='bodycolor' value='white' checked) 
+                                label.goods-params__widget-label(for="bodycolor1" style='background:#00000010;') 
+                            .goods-params__widget
+                                input.goods-params__custom-radio#bodycolor2(type="radio" name='bodycolor' value='black') 
+                                label.goods-params__widget-label(for="bodycolor2" style='background:#000000;') 
+                            .goods-params__widget
+                                input.goods-params__custom-radio#bodycolor3(type="radio" name='bodycolor' value='grey') 
+                                label.goods-params__widget-label(for="bodycolor3" style='background:#919191;') 
+                            .goods-params__widget
+                                input.goods-params__custom-radio#bodycolor4(type="radio" name='bodycolor' value='blue') 
+                                label.goods-params__widget-label(for="bodycolor4" style='background:#154DBF;') 
+                            .goods-params__widget
+                                input.goods-params__custom-radio#bodycolor5(type="radio" name='bodycolor' value='red') 
+                                label.goods-params__widget-label(for="bodycolor5" style='background:#D83422;') 
+
+                    
+                    .goods-params__items
+                        .goods-params__subtitle Выберите диски
+                        .goods-params__widgets
+                            .goods-params__widget
+                                input.goods-params__custom-radio#wheels1(type="radio" name='wheels' value='wheel_type1' checked) 
+                                label.goods-params__widget-label(for="wheels1")
+                                    img.goods-params__widget-img(src='@img/goods-whell-1.png') 
+                            .goods-params__widget
+                                input.goods-params__custom-radio#wheels2(type="radio" name='wheels' value='wheel_type2') 
+                                label.goods-params__widget-label(for="wheels2") 
+                                    img.goods-params__widget-img(src='@img/goods-whell-2.png') 
+
+                    .goods-params__items
+                        .goods-params__subtitle Выберите цвет салона
+                        .goods-params__widgets
+                            .goods-params__widget
+                                input.goods-params__custom-radio#interior1(type="radio" name='interiors' value='black' checked) 
+                                label.goods-params__widget-label(for="interior1" style='background:#000000;')
+                            .goods-params__widget
+                                input.goods-params__custom-radio#interior2(type="radio" name='interiors' value='white') 
+                                label.goods-params__widget-label(for="interior2" style='background:#D8D8D8;')
+                            .goods-params__widget
+                                input.goods-params__custom-radio#interior3(type="radio" name='interiors' value='bage') 
+                                label.goods-params__widget-label(for="interior3" style='background:#DBCDA4;')
+
+                    .goods-params__btn-bx 
+                        button.btn.btn-black.goods-params__btn(type='submit') перейти к покупке
+
+
+
+    section.section.page-table
+        .content-container
+            .row.page-table__row
+                .page-table__col 
+                    h2.sectiont-content__title Характеристики Tesla Model S
+                .page-table__col 
+                    .page-table__wrp
+                        table 
+                            tbody 
+                                tr 
+                                    td Батарея
+                                    td 100 кВт·ч
+                                tr 
+                                    td Разгон от 0 до 100 км/ч
+                                    td 9 сек
+                                tr 
+                                    td Максимальная скорость
+                                    td 322 км/ч
+                                tr 
+                                    td Запас хода
+                                    td 628 км (по циклу WLTP)
+                                tr 
+                                    td Мощность двигателя
+                                    td 1 034 л.с.
+                                tr 
+                                    td Привод
+                                    td Полный (AWD)
+                                tr 
+                                    td Количество мест
+                                    td 5/7 взрослых
+                                tr 
+                                    td Колеса
+                                    td 19” или 21”
+                                tr 
+                                    td Вес
+                                    td 2 161 кг
+                                tr 
+                                    td Длина
+                                    td 4 978 мм
+                                tr 
+                                    td Ширина
+                                    td 1 963 мм
+                                tr 
+                                    td Высота
+                                    td 1 445 мм
+                                tr 
+                                    td Колесная база
+                                    td 2 959 мм
+
+
+                
+
+    section.section.page-content 
+        .content-container
+            .row.page-content__row 
+                .page-content__col 
+                    h2.sectiont-content__title Tesla Model S: особенности и преимущества электромобиля
+                .page-content__col 
+                    p Электромобиль Tesla Model S — революция в мире автомобилестроения. Эта модель призвана уничтожить двигатель внутреннего сгорания и приучить людей использовать только экологически чистый транспорт. На примере Model S в Tesla доказали, что у электромотора масса преимуществ перед бензиновым и дизельным агрегатами.
+                    p 
+                    p
+                    p По динамическим характеристикам этот автомобиль стоит в одном ряду со знаменитыми суперкарами, а по многим другим параметрам даже превосходит их. С батареей на 100 кВт·ч машина разгоняется до 100 км/ч за 2,1 секунды, что быстрее многих экзотичных гиперкаров, выпускаемых в единичных экземплярах.
+    
+
+
+    section.goods-subslider_wrp
+        .container
+            .goods-subslider
+                .goods-subslider__wrapper.swiper-wrapper
+                    .swiper-slide
+                        .goods-subslider__img-bx
+                            img.goods-subslider__img(src='@img/page-goods.jpg')
+                        .goods-subslider__cont 
+                            .goods-subslider__col 
+                                .goods-subslider__title Бескомпромиссный дизайн и аэродинамика
+                            .goods-subslider__col Model X – самый аэродинамичный серийный внедорожник на Земле с наименьшим коэффициентом лобового сопротивления 0,25 Cx . Усовершенствованные аэродинамические элементы в сочетании с новыми колесами и шинами помогут вам путешествовать еще дальше, с более эффективной управляемостью и беспрецедентным комфортом езды.
+                .goods-subslider__nav
+                    span.goods-subslider__prev.icon.icon-salon_arrow
+                    span.goods-subslider__next.icon.icon-salon_arrow_active
+                                            
+
+    
+    
+
+
+

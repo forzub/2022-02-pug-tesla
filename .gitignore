@@ -9,11 +9,9 @@ Thumbs.db
 
 # Вспомогательные файлы
 *.log*
-gulpfile.js
-package-lock.json
-package.json 
+
+package-lock.json 
 node_modules/
-gulp/
-build/
+
 
 # Папка с собранными файлами проекта
