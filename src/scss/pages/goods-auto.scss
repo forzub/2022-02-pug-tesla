@@ -3,20 +3,43 @@
     overflow: hidden;
     font-weight: 500;
 
+   
     &-slider__wrp{
-        width: 60.5%;
-        order:-1;
+        
         overflow: hidden;
-        margin-bottom: 120px;
-        float: left;
+        
+        
+
+        @media (min-width: 992px){
+            order:-1;
+            width: 60.5%;
+            float: left;
+            margin-bottom: 120px;
+        }
+
     }
 
+
     &-title{
-        width: 39.5%;
-        padding: 0 0 0 80px;
-        float: right;
+        padding: 0;
+
+        @media (min-width: 992px){
+            width: 39.5%;
+            padding: 0 0 0 80px;
+            float: right;
+        }
         
     }
+
+    &-title .sectiont__title{
+        margin-bottom: 10px;
+
+        @media (min-width: 992px){
+            margin-bottom: 40px;
+        }
+    }
+
+
 
     &-price, &-params__title {
         font-size: 1.142rem;
@@ -25,9 +48,14 @@
     }
 
     &-params__form{
-        width: 39.5%;
-        padding: 0 0 0 80px;
-        float: right;
+        
+
+        @media (min-width: 992px){
+            width: 39.5%;
+            padding: 0 0 0 80px;
+            float: right;
+        }
+        
     }
 
 
@@ -107,17 +135,31 @@
     }
 
     &-params__widgets{
-        display: flex;
-        align-items: center;
+        margin-left: -12px;
+
+       
     }
     
     &-params__widget{
-        flex: 0 0 48px;        
+        
         height: 48px;
+        width: 48px;
+        display: inline-block;
+
+       
+    }
+    &-params__widget:first-child{
+        margin-left: 12px;
+
+        
     }
 
-    &-params__widget + &-params__widget{
-        margin-left: 12px;
+    &-params__widget{
+        margin: 0 0 12px 12px;
+       
+        @media (min-width: 992px){
+            margin: 0 0 0 12px;
+        }
     }
 
     &-params__custom-radio{
@@ -158,7 +200,7 @@
 
 
     &-params__btn-bx{
-        padding: 18px 0 0 0;
+        padding: 18px 0 121px 0;
     }
 
     &-slider{
@@ -187,11 +229,17 @@
     }
 
     &-slider__navigation {
-        width: 52%;
+        
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        padding: 51px 0 0 0;
+        width: 100%;
+        padding: 30px 0 0 0;
+
+        @media (min-width: 992px){
+            width: 52%;
+            padding: 51px 0 0 0;
+        }
     }
 
     &-slider__prev, &-slider__next{
@@ -205,22 +253,39 @@
 
     &__row{
         align-items: flex-start;
-        padding: 109px 0 118px 0;
+        padding: 40px 0 60px 0;
+
+        @media (min-width: 992px){
+            padding: 109px 0 118px 0;
+        }
+        
     }
 
     &__col{
-        width: 50%;
+        width: 100%;
+        
+        @media (min-width: 992px){
+            width: 50%;
+        }
     }
 
     &__col .sectiont-content__title{
-        padding-right: 180px;
+        
+
+        @media (min-width: 992px){
+            padding-right: 180px;
+        }
     }
 
     &__wrp{
         color:#000;
-        font-size: 0.857rem;
+        font-size: 0.67rem;
         line-height: 1.8;
         font-weight: 500;
+
+        @media (min-width: 992px){
+            font-size: 0.857rem;
+        }
     }
 
     &__wrp table{
@@ -243,12 +308,22 @@
 
     &__wrp td:nth-child(1){
         color: #989898;
-        font-size: 0.667rem;
+        font-size: 0.5rem;
         line-height: 1.36;
         text-transform: uppercase;
-        width: 42%;
+        width: 50%;
+        padding-right: 10px;
         height: 54px;
+
+        @media (min-width: 992px){
+            font-size: 0.667rem;
+            width: 42%;
+        }
     }
+
+
+
+
     
 
 }
@@ -258,11 +333,18 @@
 
     &__row{
         align-items: flex-start;
-        padding: 110px 0 93px 0;
+        padding: 40px 0 40px 0;
+
+        @media (min-width: 992px){
+            padding: 110px 0 93px 0;
+        }
     }
     
     &__col{
-        width: 50%;
+
+        @media (min-width: 992px){
+            width: 50%;
+        }
     }
 
     &__col .sectiont-content__title{
@@ -277,6 +359,204 @@ color: #000000;
 
 }
 
+.content{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+.goods-subslider{
+    overflow: hidden;
+    
+
+
+    &__cont.content-container{
+        max-width: 1530px;
+        display: flex;
+        padding: 20px 30px 0 30px;
+        flex-wrap: wrap;
+
+        @media (min-width: 992px){
+            padding: 60px 30px 0 30px;
+            flex-wrap: nowrap;
+        }
+    }
+    
+    &__title{
+        flex: 0 0 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.36;
+        color: #000000;
+        padding-bottom: 20px;
+
+        @media (min-width: 992px){
+            flex: 0 0 31%;
+            font-size: 1.714rem;
+        }
+    }
+
+    &__col{
+        padding: 0 0 0 0px;
+        font-weight: 300;
+        line-height: 1.8;
+        color: #000000;
+        font-size: 0.667rem;
+        padding-bottom: 30px;
+
+        @media (min-width: 992px){
+            font-size: 1rem;
+            padding: 0 0 0 121px;
+        }
+    }
+
+    &__nav.content-container{
+        padding-bottom: 60px;
+
+        @media (min-width: 992px){
+            padding-bottom: 160px;
+        }
+    }
+    
+    &__nav-bx{
+        display: flex;
+        
+        justify-content: space-between;
+
+        @media (min-width: 992px){
+            width: 31%;
+        }
+    }
+
+    &__prev,
+    &__next{
+        cursor: pointer;
+    }
+
+    &__img-bx img{
+        width: 100%;
+    }
+
+
+}
+
+
+
+.goods-params__with-preview{
+    position: relative;
+}
+
+.goods-params__preview{
+    width: 84px;
+    height: 84px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out ;
+}
+
+.goods-params__default-radio:checked + .goods-params__default-label + .goods-params__preview{
+    opacity: 1;
+    visibility: visible;
+}
+
+.goods-params__preview-img{
+    width: 100%;
+}
+
+.goods-param__checkbox{
+    display: none;
+}
+
+.goods-param__switch{
+    display: block;
+    width: 59px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid #B8B8B8;
+    background-color: #F3F3F3;
+    position: relative;
+    z-index: 0;
+    transition: background-color 0.35s ease-in-out;
+}
+
+.goods-param__switch::after{
+    border: 1px solid #B8B8B8;
+    background-color: #fff;   
+    z-index: 2;
+    transition: border 0.35s ease-in-out, left 0.35s ease-in-out, background-color 0.35s ease-in-out;
+}
+
+.goods-param__switch::before,.goods-param__switch::after{
+    content:'';
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: -2px;
+} 
+
+.goods-param__switch::before{   
+    background: url(../img/icons/check-slider.svg) no-repeat center; 
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out, left 0.35s ease-in-out; 
+}
+
+.goods-param__checkbox:checked + .goods-param__switch{
+    background-color: #fff;
+}
+
+.goods-param__checkbox:checked + .goods-param__switch::after{
+    border: 1px solid #2E2E2E;
+    
+}
+.goods-param__checkbox:checked + .goods-param__switch::before{
+    opacity: 1;
+    visibility: visible;
+}
+.goods-param__checkbox:checked + .goods-param__switch::before, .goods-param__checkbox:checked + .goods-param__switch::after{
+    left: 35px;
+}
+
+
+.goods-params__switch-off{
+    right: 7px;
+}
+
+.goods-params__switch-on{
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.goods-param__checkbox:checked + .goods-param__switch>.goods-params__switch-off{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.goods-param__checkbox:checked + .goods-param__switch>.goods-params__switch-on{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.goods-params__switch-off, .goods-params__switch-on{
+    font-weight: 600;
+    font-size: 0.57rem;
+    line-height: 22px;
+    letter-spacing: 0.028rem;
+    text-transform: uppercase;
+    color: #B2B2B2;
+    position: absolute;
+    transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
+}
 
 
 
@@ -284,7 +564,7 @@ color: #000000;
 
 @media (min-width: 576px){}
 
-@media (min-width: 728px){}
+@media (min-width: 992px){}
 
 @media (min-width: 992px){}
 

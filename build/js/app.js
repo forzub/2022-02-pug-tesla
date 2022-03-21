@@ -39,7 +39,7 @@ if (document.querySelector('.banner-slider-background')) {index_banner_swiper = 
 });}
 
 let saloon_swiper = null;
-if (document.querySelector('.saloon-slider')) {index_banner_swiper = new Swiper('.saloon-slider',{
+if (document.querySelector('.saloon-slider')) {saloon_swiper = new Swiper('.saloon-slider',{
     loop : true,
     watchOverflow : true,
     navigation: {
@@ -94,3 +94,33 @@ if (document.querySelector('.goods-slider')) {index_banner_swiper = new Swiper('
 // if (document.querySelector('.goods-navslider')) {index_banner_swiper = new Swiper('.goods-navslider',{
 
 // }) };
+
+
+let goods_subswiper = null;
+if (document.querySelector('.goods-subslider')) {goods_subswiper = new Swiper('.goods-subslider',{
+    loop : true,
+    watchOverflow : true,
+    navigation: {
+        nextEl: '.goods-subslider__next',
+        prevEl: '.goods-subslider__prev',
+        },
+    autoplay:{
+        delay:5000
+        },
+    breakpoints: {
+        
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        
+        480: {
+            
+        },
+        
+        728: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+        }
+        }   
+});}

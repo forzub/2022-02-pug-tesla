@@ -62,52 +62,51 @@ block content
 
                     .goods-params__items
                         .goods-params__subtitle ТИП КОННЕКТОРА
-                        .goods-params__items-txt
+                        .goods-params__items-txt.goods-params__with-preview
                             .goods-params__item
                                 input.goods-params__default-radio#connector1(type="radio" name='connector' value='type1' checked) 
                                 label.goods-params__default-label(for="connector1") <strong>Кабель Тип 1</strong>
+                                .goods-params__preview
+                                    img.goods-params__preview-img(src='@img/goods2-2-serv-1.jpg')
                             .goods-params__item
                                 input.goods-params__default-radio#connector2(type="radio" name='connector' value='type2' checked) 
                                 label.goods-params__default-label(for="connector2") <strong>Кабель Тип 2</strong>
+                                .goods-params__preview
+                                    img.goods-params__preview-img(src='@img/goods2-2-serv-2.jpg')    
                             .goods-params__item
                                 input.goods-params__default-radio#connector3(type="radio" name='connector' value='type3' checked) 
                                 label.goods-params__default-label(for="connector3") <strong>Кабель Тип 3</strong>
-                        
-                        .goods-params__items-img-bx
-                            img.goods-params__img.gp__connector1(src='@img/goods2-2-serv-1.jpg') 
-                            img.goods-params__img.gp__connector2(src='@img/goods2-2-serv-2.jpg') 
-                            img.goods-params__img.gp__connector3(src='@img/goods2-2-serv-3.jpg') 
+                                .goods-params__preview
+                                    img.goods-params__preview-img(src='@img/goods2-2-serv-3.jpg')
 
 
                     .goods-params__items
                         .goods-params__subtitle Выберите цвет корпуса
-                        .goods-params__item
-                            input.goods-params__custom-radio#casecolor1(type="radio" name='casecolor' value='white' checked) 
-                            label.goods-params__casecolor-label(for="casecolor1" style='background:#ffffff;') <strong>
-                        .goods-params__item
-                            input.goods-params__custom-radio#casecolor2(type="radio" name='casecolor' value='black') 
-                            label.goods-params__casecolor-label(for="casecolor2" style='background:#000000;')
+                        .goods-params__widgets
+                            .goods-params__widget
+                                input.goods-params__custom-radio#casecolor1(type="radio" name='casecolor' value='white' checked) 
+                                label.goods-params__widget-label(for="casecolor1" style='background:#00000010;')
+                            .goods-params__widget
+                                input.goods-params__custom-radio#casecolor2(type="radio" name='casecolor' value='black') 
+                                label.goods-params__widget-label(for="casecolor2" style='background:#000000;')
                             
                     .goods-params__items
                         .goods-params__subtitle Монетизация
-                        <label class="switch">
-                            <input type="checkbox" name='monetization'>
-                            <span class="slider round"></span>
-                        </label>
+                        .goods-params__switch
+                            <input class="goods-param__checkbox" type="checkbox" name='monetization' id="monetization">
+                            <label class="goods-param__switch" for="monetization"><span class="goods-params__switch-on">on</span><span class="goods-params__switch-off">off</span></label>
 
                     .goods-params__items
                         .goods-params__subtitle Дисплей-экран
-                        <label class="switch">
-                            <input type="checkbox" name='display'>
-                            <span class="slider round"></span>
-                        </label>
+                        .goods-params__switch
+                            <input class="goods-param__checkbox" type="checkbox" name='display' id="display">
+                            <label class="goods-param__switch" for="display"><span class="goods-params__switch-on">on</span><span class="goods-params__switch-off">off</span></label>
                             
                     .goods-params__items
                         .goods-params__subtitle Подиум
-                        <label class="switch">
-                            <input type="checkbox" name='podium'>
-                            <span class="slider round"></span>
-                        </label>
+                        .goods-params__switch
+                            <input class="goods-param__checkbox" type="checkbox" name='podium' id="podium">
+                            <label class="goods-param__switch" for="podium"><span class="goods-params__switch-on">on</span><span class="goods-params__switch-off">off</span></label>
                 
 
                     .goods-params__btn-bx 

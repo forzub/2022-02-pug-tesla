@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?v=1647790616472"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap&v=20220320173655" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?v=1647876149903"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap&v=20220321172229" rel="stylesheet">
     <title>Wall</title>
   </head>
   <body>
@@ -114,50 +114,54 @@
                 </div>
                 <div class="goods-params__items">
                   <div class="goods-params__subtitle">ТИП КОННЕКТОРА</div>
-                  <div class="goods-params__items-txt">
+                  <div class="goods-params__items-txt goods-params__with-preview">
                     <div class="goods-params__item">
                       <input class="goods-params__default-radio" id="connector1" type="radio" name="connector" value="type1" checked>
                       <label class="goods-params__default-label" for="connector1"><strong>Кабель Тип 1</strong></label>
+                      <div class="goods-params__preview"><picture><source srcset="img/goods2-2-serv-1.webp" type="image/webp"><img class="goods-params__preview-img" src="img/goods2-2-serv-1.jpg"></picture></div>
                     </div>
                     <div class="goods-params__item">
                       <input class="goods-params__default-radio" id="connector2" type="radio" name="connector" value="type2" checked>
                       <label class="goods-params__default-label" for="connector2"><strong>Кабель Тип 2</strong></label>
+                      <div class="goods-params__preview"><picture><source srcset="img/goods2-2-serv-2.webp" type="image/webp"><img class="goods-params__preview-img" src="img/goods2-2-serv-2.jpg"></picture></div>
                     </div>
                     <div class="goods-params__item">
                       <input class="goods-params__default-radio" id="connector3" type="radio" name="connector" value="type3" checked>
                       <label class="goods-params__default-label" for="connector3"><strong>Кабель Тип 3</strong></label>
+                      <div class="goods-params__preview"><picture><source srcset="img/goods2-2-serv-3.webp" type="image/webp"><img class="goods-params__preview-img" src="img/goods2-2-serv-3.jpg"></picture></div>
                     </div>
                   </div>
-                  <div class="goods-params__items-img-bx"><picture><source srcset="img/goods2-2-serv-1.webp" type="image/webp"><img class="goods-params__img gp__connector1" src="img/goods2-2-serv-1.jpg"></picture><img class="goods-params__img gp__connector2" src="img/goods2-2-serv-2.jpg"><img class="goods-params__img gp__connector3" src="img/goods2-2-serv-3.jpg"></div>
                 </div>
                 <div class="goods-params__items">
                   <div class="goods-params__subtitle">Выберите цвет корпуса</div>
-                  <div class="goods-params__item">
-                    <input class="goods-params__custom-radio" id="casecolor1" type="radio" name="casecolor" value="white" checked>
-                    <label class="goods-params__casecolor-label" for="casecolor1" style="background:#ffffff;"><strong></label>
+                  <div class="goods-params__widgets">
+                    <div class="goods-params__widget">
+                      <input class="goods-params__custom-radio" id="casecolor1" type="radio" name="casecolor" value="white" checked>
+                      <label class="goods-params__widget-label" for="casecolor1" style="background:#00000010;"></label>
+                    </div>
+                    <div class="goods-params__widget">
+                      <input class="goods-params__custom-radio" id="casecolor2" type="radio" name="casecolor" value="black">
+                      <label class="goods-params__widget-label" for="casecolor2" style="background:#000000;"></label>
+                    </div>
                   </div>
-                  <div class="goods-params__item">
-                    <input class="goods-params__custom-radio" id="casecolor2" type="radio" name="casecolor" value="black">
-                    <label class="goods-params__casecolor-label" for="casecolor2" style="background:#000000;"></label>
+                </div>
+                <div class="goods-params__items">
+                  <div class="goods-params__subtitle">Монетизация</div>
+                  <div class="goods-params__switch"><input class="goods-param__checkbox" type="checkbox" name='monetization' id="monetization">
+<label class="goods-param__switch" for="monetization"><span class="goods-params__switch-on">on</span><span class="goods-params__switch-off">off</span></label>
                   </div>
                 </div>
                 <div class="goods-params__items">
-                  <div class="goods-params__subtitle">Монетизация</div><label class="switch">
-<input type="checkbox" name='monetization'>
-<span class="slider round"></span>
-</label>
+                  <div class="goods-params__subtitle">Дисплей-экран</div>
+                  <div class="goods-params__switch"><input class="goods-param__checkbox" type="checkbox" name='display' id="display">
+<label class="goods-param__switch" for="display"><span class="goods-params__switch-on">on</span><span class="goods-params__switch-off">off</span></label>
+                  </div>
                 </div>
                 <div class="goods-params__items">
-                  <div class="goods-params__subtitle">Дисплей-экран</div><label class="switch">
-<input type="checkbox" name='display'>
-<span class="slider round"></span>
-</label>
-                </div>
-                <div class="goods-params__items">
-                  <div class="goods-params__subtitle">Подиум</div><label class="switch">
-<input type="checkbox" name='podium'>
-<span class="slider round"></span>
-</label>
+                  <div class="goods-params__subtitle">Подиум</div>
+                  <div class="goods-params__switch"><input class="goods-param__checkbox" type="checkbox" name='podium' id="podium">
+<label class="goods-param__switch" for="podium"><span class="goods-params__switch-on">on</span><span class="goods-params__switch-off">off</span></label>
+                  </div>
                 </div>
                 <div class="goods-params__btn-bx"> 
                   <button class="btn btn-black goods-params__btn" type="submit">перейти к покупке</button>
@@ -273,8 +277,8 @@
           </div>
         </form>
       </div>
-      <script src="js/swiper-bundle.min.js?v=20220320173655"></script>
-      <script src="js/app.js?v=20220320173655"></script>
+      <script src="js/swiper-bundle.min.js?v=20220321172229"></script>
+      <script src="js/app.js?v=20220321172229"></script>
     </div>
   </body>
 </html>

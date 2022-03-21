@@ -120,38 +120,55 @@ h2.sectiont-content__title{
 }
 
 .breadcrumbs{
-    padding: 40px 0;
+    
+    display: none;
+
+    @media (min-width: 728px){
+        display: block;
+        padding: 20px 0;
+    }
+
+    @media (min-width: 992px){
+        padding: 40px 0;
+    }
+
+
+    &__link{
+        font-weight: 600;
+        font-size: 0.667rem;
+        line-height: 1.36;
+        letter-spacing: 0.028rem;
+        text-transform: uppercase;   
+    }
+
+    & a{
+        color: #000000;
+    
+        @media (min-width: 992px){
+            transition: opacity 0.8s ease 0s;
+            opacity: 1;
+    
+            &:hover{opacity: 0.5;}
+        }
+    }
+
+    & span{
+        color: #B2B2B2;
+    
+    }
+
 }
 
-.breadcrumbs__link, .icon-readcrumbs-separation{
+
+.icon-readcrumbs-separation{
     font-weight: 600;
     font-size: 0.667rem;
     line-height: 1.36;
     letter-spacing: 0.028rem;
-    text-transform: uppercase;   
-}
-
-a.breadcrumbs__link{
-    color: #000000;
-
-    @media (min-width: 992px){
-        transition: opacity 0.8s ease 0s;
-        opacity: 1;
-
-        &:hover{opacity: 0.5;}
-    }
-}
-
-.icon-readcrumbs-separation{
+    text-transform: uppercase;
     color: #B2B2B2;
     margin: 0 10px;
 }
-
-span.breadcrumbs__link{
-    color: #B2B2B2;
-
-}
-
 
 
 .sectiont__title{
@@ -171,5 +188,13 @@ span.breadcrumbs__link{
 }
 
 
+@media (min-width: 576px){}
 
+@media (min-width: 728px){}
+
+@media (min-width: 992px){}
+
+@media (min-width: 1200px){}
+
+@media (min-width: 1400px){}
 
