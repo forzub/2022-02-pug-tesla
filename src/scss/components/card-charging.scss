@@ -105,11 +105,11 @@
         right: 0;
     }
 
-    &__button{
+    &__button.btn-transparent-blk{
         position: relative;
         z-index: 6;
         min-width: auto;
-        padding: 20px 48px;
+        padding: 20px 48px !important;
     }
     &__button:hover{
         background-color: #222222;

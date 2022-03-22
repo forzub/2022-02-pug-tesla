@@ -2330,11 +2330,11 @@ footer {
   right: 0;
 }
 
-.card-good__button {
+.card-good__button.btn-transparent-blk {
   position: relative;
   z-index: 6;
   min-width: auto;
-  padding: 20px 48px;
+  padding: 20px 48px !important;
 }
 
 .card-good__button:hover {
