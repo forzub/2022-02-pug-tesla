@@ -1,6 +1,7 @@
 extends ./common/base
 
 include ./mixin/template-breadcrumbs
+include ./mixin/card-charging
 //- include ./mixin/cardSlider
 //- include ./mixin/tab
 
@@ -8,6 +9,22 @@ block vars
     - let siteTitle = 'Зарядные устройства';
 
 block content
+    section.section
+        .content-container
+            +breadcrumbs([{title : siteTitle, href : '/charging'}])
+            .section__content
+                h1.sectiont__title #{siteTitle}
+
+
+    section.section
+        .content
+            .row.card-good 
+                +card_charging({ title: 'wall', price: '38 000 ₽', img : 'changer-1.jpg' , link: '/goods-charging.html'} )
+                +card_charging({ title: 'Business', price: '180 000 ₽', img : 'changer-2.jpg' , link: '/goods-charging.html'} )
+                +card_charging({ title: 'Модель FS100', price: '3 070 000 ₽', img : 'changer-3.jpg' , link: '/goods-charging.html'} )
+                +card_charging({ title: 'Модель FT50', price: '3 280 000 ₽', img : 'changer-4.jpg' , link: '/goods-charging.html'} )
+                +card_charging({ title: 'Модель FD100', price: '3 692 500 ₽', img : 'changer-5.jpg' , link: '/goods-charging.html'} )
+                +card_charging({ title: 'Модель FT100', price: '3 985 000 ₽', img : 'changer-6.jpg' , link: '/goods-charging.html'} )
 
     
     

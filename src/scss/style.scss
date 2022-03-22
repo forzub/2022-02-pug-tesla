@@ -17,20 +17,21 @@ html,body{
 
 *, *::before, *::after{ box-sizing: border-box;}
 body{position: relative;z-index: 1;margin: 0;}
-body::before{
-    content:'';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    //  background: url(@img/main_page_desktop.jpg) no-repeat top center;
-     // background: url(@img/qustion.jpg) no-repeat top center;
-    //  background: url(@img/sect-cat.jpg) no-repeat top center;
-    z-index: -1;
-    opacity: 0.4;
-}
+// .wrapper::before{
+//     content:'';
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     //  background: url(@img/main_page_desktop.jpg) no-repeat top center;
+//      // background: url(@img/qustion.jpg) no-repeat top center;
+//     //  background: url(@img/sect-cat.jpg) no-repeat top center;
+//      background: url(@img/Car_desktop.png) no-repeat top center;
+//     z-index: -1;
+//     opacity: 0.4;
+// }
 
 h1,h2,h3,h4,h5,h6{margin: 0;}
 ul,li{list-style: none;padding: 0;margin: 0;}
@@ -41,7 +42,15 @@ p{
 }
 
 .row {display: flex;align-items: center;flex-wrap: wrap;}
-.wrapper {display: flex;flex-direction: column;height: 100%;overflow-x: hidden;min-width: 320px;}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+    min-width: 320px;
+    scroll-behavior: smooth;
+}
 
 
 // @import './common/main-cont.scss';
@@ -59,6 +68,7 @@ p{
 @import './components/info-type2.scss';
 @import './components/card-cars.scss';
 @import './components/sect-saloon.scss';
+@import './components/card-charging.scss';
 @import './components/contacts.scss';
 @import './components/sect-contact.scss';
 

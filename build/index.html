@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?v=1647876150141"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap&v=20220321172229" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?v=1647959794665"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap&v=20220322163630" rel="stylesheet">
     <title>Единственный салон TESLA в Санкт-Петербурге</title>
   </head>
   <body>
@@ -32,7 +32,7 @@
               </nav>
               <div class="top-line__col top__phone"> <a class="top-phone__link" href="tel:88005501836">8 (800) 550-18-36</a></div>
               <div class="top-line__col top__requestcall"> 
-                <button class="top__requestcall-btn" type="text">заказать звонок</button>
+                <button class="top__requestcall-btn" type="text" onclick="form_req_open();">заказать звонок</button>
               </div>
               <div class="top-line__col top-mobile__buttons">
                 <div class="top-menu__btn top-mob__menu" onclick="mob_menu_onclick()"><span class="top-mob__menu-tx icon icon-menu"></span></div>
@@ -80,9 +80,8 @@
               <div class="banner-slider-textlayer"> 
                 <div class="banner-slider__text-cont">      
                   <h1 class="index-banner__title index-banner__title">Единственный салон в Санкт-Петербурге</h1>
-                  <div class="index-banner__buttons row"> 
-                    <button class="index-banner__button btn btn-white">каталог</button>
-                    <button class="index-banner__button btn btn-transparent">задать вопрос</button>
+                  <div class="index-banner__buttons row"> <a class="index-banner__button btn btn-white" href="/cars.html">каталог</a>
+                    <button class="index-banner__button btn btn-transparent" onclick="form_req_open();">задать вопрос</button>
                   </div>
                 </div>
               </div>
@@ -111,7 +110,7 @@
                         <div class="card-cars-info__label">Разгон </div>
                       </div>
                       <div class="card-cars-info__itm cci-instock">                          <span class="icon icon-checkmark"></span><span class="card-cars-info__instock">В наличии</span></div>
-                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="/goods-auto.html">узнать больше</a></div>
                     </div>
                   </div>
                 </div>
@@ -134,7 +133,7 @@
                         <div class="card-cars-info__label">Разгон </div>
                       </div>
                       <div class="card-cars-info__itm cci-nostock"> </div>
-                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="/goods-auto.html">узнать больше</a></div>
                     </div>
                   </div>
                 </div>
@@ -157,7 +156,7 @@
                         <div class="card-cars-info__label">Разгон </div>
                       </div>
                       <div class="card-cars-info__itm cci-nostock"> </div>
-                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="/goods-auto.html">узнать больше</a></div>
                     </div>
                   </div>
                 </div>
@@ -180,13 +179,13 @@
                         <div class="card-cars-info__label">Разгон </div>
                       </div>
                       <div class="card-cars-info__itm cci-nostock"> </div>
-                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="#">узнать больше</a></div>
+                      <div class="card-cars-info__itm cci-btn"><a class="card-cars-info__button btn btn-transparent-blk" href="/goods-auto.html">узнать больше</a></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row catalog-sect__btn-bx"> <a class="btn btn-black catalog-sect__btn" href="/catalog">перейти в каталог</a></div>
+            <div class="row catalog-sect__btn-bx"> <a class="btn btn-black catalog-sect__btn" href="/cars.html">перейти в каталог</a></div>
           </div>
         </section>
         <section class="section why-tesla">
@@ -386,7 +385,7 @@
           <div class="content-container">
             <div class="row">
               <div class="footer-info__col footer-info__phone"> <a class="footer-info__link" href="tel:88005501836">8 (800) 550-18-36</a></div>
-              <div class="footer-info__col footer-info__up" onclick="footer_up_click()"><span class="icon icon-footer_up"></span></div>
+              <div class="footer-info__col footer-info__up" onclick="scroll_up();"><span class="icon icon-footer_up"></span></div>
               <div class="footer-info__col footer-info__email"> <a class="footer-info__link" href="mailto:info@unicommotors.com">info@unicommotors.com</a></div>
             </div>
           </div>
@@ -411,7 +410,7 @@
       </footer>
       <div class="form__back form-request">
         <form class="form-pop" id="form-request" action="#">
-          <div class="form-pop__close"> <span class="icon icon-modal_close"></span></div>
+          <div class="form-pop__close"> <span class="icon icon-modal_close" onclick="form_req_close();"></span></div>
           <h2 class="form-pop__title">Заказать звонок</h2>
           <h2 class="form-pop__sub-title">Заполните необходимые данные, и наш менеджер свяжется с вами для осуществления покупки</h2>
           <div class="form-pop__content"> 
@@ -431,7 +430,7 @@
       </div>
       <div class="form__back form_confirm">
         <form class="form-pop" id="form-confirm" action="#">
-          <div class="form-pop__close"> <span class="icon icon-modal_close"></span></div>
+          <div class="form-pop__close"> <span class="icon icon-modal_close" onclick="form_buy_close();"></span></div>
           <h2 class="form-pop__title">Подтверждение покупки</h2>
           <h2 class="form-pop__sub-title">Заполните необходимые данные, и наш менеджер свяжется с вами для осуществления покупки</h2>
           <div class="form-pop__content"> 
@@ -456,8 +455,8 @@
           </div>
         </form>
       </div>
-      <script src="js/swiper-bundle.min.js?v=20220321172229"></script>
-      <script src="js/app.js?v=20220321172229"></script>
+      <script src="js/swiper-bundle.min.js?v=20220322163630"></script>
+      <script src="js/app.js?v=20220322163630"></script>
     </div>
   </body>
 </html>

@@ -25,6 +25,27 @@ function footer_up_click(){
     window.scrollTo(10, 0);
 }
 
+function form_buy_open(){
+    document.querySelector('.form_confirm').classList.add('form-bk__show');
+}
+
+function form_buy_close(){
+    document.querySelector('.form_confirm').classList.remove('form-bk__show');
+}
+
+function form_req_open(){
+    document.querySelector('.form-request').classList.add('form-bk__show');
+}
+
+function form_req_close(){
+    document.querySelector('.form-request').classList.remove('form-bk__show');
+}
+
+
+function scroll_up(){
+    document.querySelector('.wrapper').scrollTo(0,0);
+}
+
 
 
 // import * as flsFunctions from './modules/functions.js';

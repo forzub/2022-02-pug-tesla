@@ -1,0 +1,12 @@
+mixin card_accessories(obj)
+    .card-good__col
+        .card-good__content.accessories
+            .row.card-good__row.card-good__line1
+                h3.card-good__title #{obj.title}
+                .card-good__price #{obj.price}
+                a.card-good__img(href=`${obj.link}`) 
+                    img.page-banner__img(src=`@img/${obj.img}`)
+            
+            .row.card-good__row.card-good__line2
+                .card-good-info__itm
+                    .card-good__button.btn.btn-transparent-blk(onclick=`form_buy_open();`) Купить 

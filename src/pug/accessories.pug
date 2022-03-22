@@ -1,6 +1,7 @@
 extends ./common/base
 
 include ./mixin/template-breadcrumbs
+include ./mixin/card-accessories
 //- include ./mixin/cardSlider
 //- include ./mixin/tab
 
@@ -8,6 +9,22 @@ block vars
     - let siteTitle = 'Аксессуары';
 
 block content
+    section.section
+        .content-container
+            +breadcrumbs([{title : siteTitle, href : '/accessories'}])
+            .section__content
+                h1.sectiont__title #{siteTitle}
+
+
+    section.section
+        .content
+            .row.card-good 
+                +card_accessories({ title: 'Коврики Tesla', price: '25 139 ₽', img : 'acsess-1.jpg' , link: '/goods-charging.html'} )
+                +card_accessories({ title: 'Защитный ремешок для ключей', price: '2 159 ₽', img : 'acsess-2.jpg' , link: '/goods-charging.html'} )
+                +card_accessories({ title: 'Чехол Tesla', price: '26 085 ₽', img : 'acsess-3.jpg' , link: '/goods-charging.html'} )
+                +card_accessories({ title: 'Крючки для одежды', price: '25 139 ₽', img : 'acsess-4.jpg' , link: '/goods-charging.html'} )
+                +card_accessories({ title: 'Чехол для домашних животных', price: '12 962 ₽', img : 'acsess-5.jpg' , link: '/goods-charging.html'} )
+                +card_accessories({ title: 'Солнцезащитный козырек', price: '9 000 ₽', img : 'acsess-6.jpg' , link: '/goods-charging.html'} )
 
     
     

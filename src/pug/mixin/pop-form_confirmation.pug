@@ -2,7 +2,7 @@ mixin form_confirmation()
     .form__back.form_confirm
         form.form-pop#form-confirm(action='#')
             .form-pop__close 
-                span.icon.icon-modal_close
+                span.icon.icon-modal_close(onclick='form_buy_close();')
             h2.form-pop__title Подтверждение покупки
             h2.form-pop__sub-title Заполните необходимые данные, и наш менеджер свяжется с вами для осуществления покупки
             .form-pop__content 

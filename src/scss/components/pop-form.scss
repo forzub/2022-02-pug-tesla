@@ -1,5 +1,5 @@
 .form__back{
-    position: fixed; top: 0;left: 0;right: 0;bottom: 0; z-index: 3;
+    position: fixed; top: 0;left: 0;right: 0;bottom: 0; z-index: 33;
     background: whitesmoke;
     display: flex;
     justify-content: center;
@@ -81,4 +81,8 @@
     color:#000;
     text-align: center;
     margin-top: 62px;
+}
+
+.form__back.form-bk__show{
+    display: flex;
 }
